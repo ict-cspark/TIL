@@ -1,4 +1,4 @@
-# Git & Git hub
+# Git & Git hub 기초
 
 ---
 
@@ -7,6 +7,18 @@
 ---
 
 #### 구조
+
+---
+
+##### git의 기본적인 구조
+
+![git](git.assets/git.png)
+
+![git2](git.assets/git2.png)
+
+![git3](git.assets/git3.png)
+
+---
 
 ##### 로컬 저장소 (git)
 
@@ -27,10 +39,13 @@
 
 ```
 $ git status : git 상태 확인 (working directory와 staging area)
+$ git log : git 버전 변경 정보 확인
 
 $ git init : git에 처음 폴더를 활성화
 $ git add : working directory -> staging area 이동
+$ git add . : 현재 디렉토리의 파일 전부 이동
 $ git commit : staging area -> commits 이동 (version 생성)
+$ git commit -m " " : 이유까지 같이 이동
 $ git push : 
 
 ```
