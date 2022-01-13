@@ -2,9 +2,6 @@
 
 ## git
 
-[CLI 사용하기](startcamp/CLI.md)
+1. [CLI 사용하기](startcamp/CLI.md)
 
-[마크다운 사용방법](startcamp/markdown.md)
-
-
-
+2. [마크다운 사용방법](startcamp/Markdown.md)
