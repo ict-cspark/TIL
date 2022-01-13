@@ -1,9 +1,3 @@
-마크다운 (Markdown)
-
-일반 텍스트 기반의 경량 마크업(Markup) 언어
-
-
-
 # 마크다운
 
 ## 마크다운 문법 알아보기
@@ -121,10 +115,10 @@ print('Hello world')
 + 예시
 
   ```
-  ![ssafy](https://blog.kakaocdn.net/dn/bVa1Ja/btqTtrb27nz/dF3Mr20K37IUZ6K2lGJGJ1/img.png)
+  ![git](Markdown.assets/git.jpeg)
   ```
 
-![ssafy](https://blog.kakaocdn.net/dn/bVa1Ja/btqTtrb27nz/dF3Mr20K37IUZ6K2lGJGJ1/img.png)
+![git](Markdown.assets/git.jpeg)
 
 ---
 
