@@ -61,8 +61,19 @@ $ git push :
   +  unmodified
 + git commit 후 이유 작성 필수
   + 편집창 열리면 i(인서트) 클릭 후 이유 입력
-  + esc키 누르고 :wq 로 빠져나오기
+  + esc키 누르고 : wq 로 빠져나오기
   + 빠른 입력은 git commit -m '메시지 입력'
 
+##### $ git push
 
+* 원격 저장소 정보등록 (url)
 
+  * git remote add origin(컨벤션) remote별명 remote주소
+
+    ```
+    git remote add origin https://github.com/ict-cspark/TIL.git
+
+* 로컬 내용을 push 한다
+
+  ```
+  git push -u origin master
