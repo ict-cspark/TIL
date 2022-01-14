@@ -25,6 +25,7 @@
 
 ```bash
 $ git init
+
 ~/ssafy (master)	// master명 확인으로 git 관리여부 확인
 ```
 
@@ -39,7 +40,7 @@ $ git status	// WD, SA 의 상태를 확인하기 위한 명령어
 ```
 
 + Untracked
-  + git으로 관리되지 않았떤 파일이 등록된 경우
+  + git으로 관리되지 않았던 파일이 등록된 경우
   + WD에서 해당 단어를 확인할 수 있음
 + Tracked
   + New file : git으로 관리되지 않았던 파일이 Staging Area에 등록되었을 때 확인할 수 있음
@@ -59,6 +60,8 @@ $ git status	// WD, SA 의 상태를 확인하기 위한 명령어
 + `.gitignore` 파일을 생성 (확장자는 따로 없음)
   + 제외하고 싶은 파일을 등록
   + 파일명을 적어주면 끝
++ gitignore.io 를 이용하면 편하게 gitignore 파일을 작성할 수 있음
+  + 단, 우리가 생성한 파일은 우리가 직접 등록해야함 (ex) 단순 참고용도인 파일들)
 
 ## 4. Commit을 위한 준비
 
@@ -86,8 +89,8 @@ $ git commit -m "커밋 메시지를 남기자! 유의미한 내용으로 작성
 ``` bash
 $ git log
 $ git log --oneline // 한 줄로 축약해서 보여줌
-$ git log -p
-$ git log -숫자
+$ git log -p		// 파일의 변경 내용도 같이 보여줌
+$ git log -숫자		// 숫자만큼만 보여줌
 ```
 
 
@@ -132,3 +135,61 @@ $ git push -u origin master
 ```
 
 + -u : --set-upstream 의 shortcut 형태이고 저장소 별명과 브랜치 명을 설정 (고정) 이후 $ git push로 진행
+
+---
+
+# 원격 저장소에서 내려받기
+
+## 1. git clone
+
++ `git init`, `git remote add` 동작이 포함된 내려받기 명령어
+
++ 아무것도 없는 상태일 때 사용
+
+  ```bash
+  $ git clone 리모트레포주소
+
+
+
+![clone](git2.assets/clone.png)
+
+---
+
+## 2. git pull
+
++ remote 서버의 정보를 내려받는 명령어
+
++ git 이 적용되어 있어야 한다. (.git 폴더가 존재해야함)
+
++ remote 정보가 등록되어 있어야 한다.
+
+  ``` bash
+  $ git pull 리모트별명(origin) 브랜치명(master)
+  ```
+
+  
+
+![stash](git2.assets/stash.png)
+
++ pull로 받은 파일을 사용자가 임의로 수정했을 경우 이후에 git commit  대신에 git stash로 임시폴더에 저장하고 pull을 하면 오류없이 가능함.
+
+---
+
+# 기타)
+
+### submodule waring 메시지를 봤다!
+
+1. 어떤 폴더가 submodule 인지 확인한다.
+2. 해당 폴더로 찾아가서 .git 폴더를 제거한다.
+3. 이미 Staging Area에 올라간 상태라면
+
+​	`git rm -rf --cached 폴더명` 으로 해당 폴더를 Staging Area 에서 Working Directory로 내린다.
+
+4. git status 로 다시 상태를 체크하고
+5. git add 로 staging area에 다시 올린다.
+6. 그리고 다시 git status 로 staging area 에 올라온 상태를 파악하고
+7. git commit 을 한다.
+
++ 싸피 1학기 과정에서는 submodule 사용 계획 X
++ CLI 환경에서 (master) 가 보이면 git init 을 하지 않는게 좋다.
+

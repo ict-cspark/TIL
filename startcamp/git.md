@@ -37,7 +37,7 @@
 
 ### Git 명령어 
 
-```
+```bash
 $ git status : git 상태 확인 (working directory와 staging area) *
 $ git log : git 버전 변경 정보 확인
 
@@ -73,14 +73,14 @@ $ git push origin master : git push -u origin master를 하지 않았을 경우
 
   git remote add remote별명 remote주소  (주로 사용하는 remote 별명은 origin)
 
-  ```
-  git remote add origin https://github.com/ict-cspark/TIL.git
+  ```bash
+  $ git remote add origin https://github.com/ict-cspark/TIL.git
   ```
 
 * 로컬 내용을 push 한다
 
-  ```
-  git push -u origin master
+  ```bash
+  $ git push -u origin master
   ```
 
   이후에는 git push 만으로도 사용 가능
