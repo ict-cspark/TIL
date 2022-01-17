@@ -171,7 +171,9 @@ $ git push -u origin master
 
 ![stash](git2.assets/stash.png)
 
-+ pull로 받은 파일을 사용자가 임의로 수정했을 경우 이후에 git commit  대신에 git stash로 임시폴더에 저장하고 pull을 하면 오류없이 가능함.
++ pull로 받은 파일을 사용자가 임의로 수정했을 경우 이후에 git commit  대신에 
+
+  `$ git stash`로 임시폴더에 저장하고 `$ git pull`을 하면 오류없이 가능함.
 
 ---
 
