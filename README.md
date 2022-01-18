@@ -49,6 +49,8 @@
 ### BaekJoon Algorithm
 
 1. 
+1. [02_if_2884](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/02_if_2884.py)
+2. [03_if_2739](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/03_if_2739.py)
 2. 
 
 ### Programmers
