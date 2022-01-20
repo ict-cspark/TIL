@@ -49,10 +49,36 @@
 
 ### BaekJoon Algorithm
 
-1. 
-1. [02_if_2884](Algorithm/Baekjoon/02_if_2884.py)
-2. [03_for_2739](Algorithm/Baekjoon/03_for_2739.py)
-2. 
++ 1단계 - 입출력과 사칙연산
+
+  1. [01_2557_Hello World](Algorithm/Baekjoon/01_2557.py)
+  2. [01_10718_We love kriii](Algorithm/Baekjoon/01_10718.py)
+  3. [01_10171_고양이](Algorithm/Baekjoon/01_10171.py)
+  4. [01_10172_개](Algorithm/Baekjoon/01_10172.py)
+  5. [01_1000_A+B](Algorithm/Baekjoon/01_1000.py)
+  6. [01_1001_A-B](Algorithm/Baekjoon/01_1001.py)
+  7. [01_10998_AxB](Algorithm/Baekjoon/01_10998.py)
+  8. [01_1008_A/B](Algorithm/Baekjoon/01_1008.py)
+  9. [01_10869_사칙연산](Algorithm/Baekjoon/01_10869.py)
+  10. [01_10430_나머지](Algorithm/Baekjoon/01_10430.py)
+  11. [01_2588_곱셈](Algorithm/Baekjoon/01_2588.py)
+
+  
+
++ 2단계 - If문
+
+  1. [02_if_1330_두 수 비교하기](Algorithm/Baekjoon/02_if_1330.py)
+  2. [02_if_9498_시험 성적](Algorithm/Baekjoon/02_if_9498.py)
+  3. [02_if_2753_윤년](Algorithm/Baekjoon/02_if_2753.py)
+  4. [02_if_14681_사분면 고르기](Algorithm/Baekjoon/02_if_14681.py)
+  5. [02_if_2884_알람 시계](Algorithm/Baekjoon/02_if_2884.py)
+
+  
+
++ 3단계 - 입출력과 사칙연산
+
+  1. [03_forcd_2739_구구단](Algorithm/Baekjoon/03_for_2739.py)
+  2. 
 
 ### Programmers
 
