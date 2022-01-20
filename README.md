@@ -75,10 +75,25 @@
 
 
 
-**3단계 - 입출력과 사칙연산**
+**3단계 - For문**
 
 1. [03_forcd_2739_구구단](Algorithm/Baekjoon/03_for_2739.py)
-2. 
+1. [03_for_10950_A+B - 3](Algorithm/Baekjoon/03_for_10950.py)
+1. [03_for_8393_합](Algorithm/Baekjoon/03_for_8393.py)
+1. [03_for_15552_빠른 A+B](Algorithm/Baekjoon/03_for_15552.py)
+1. [03_for_2741_N 찍기](Algorithm/Baekjoon/03_for_2741.py)
+1. [03_for_2742_기찍 N](Algorithm/Baekjoon/03_for_2742.py)
+1. [03_for_11021_A+B - 7](Algorithm/Baekjoon/03_for_11021.py)
+1. [03_for_11022_A+B - 8](Algorithm/Baekjoon/03_for_11022.py)
+1. [03_for_2438_별 찍기 - 1](Algorithm/Baekjoon/03_for_2438.py)
+1. [03_for_2439_별 찍기 - 2](Algorithm/Baekjoon/03_for_2439.py)
+1. [03_for_10871_X보다 작은 수](Algorithm/Baekjoon/03_for_10871.py)
+
+**4단계 - While문**
+
+1. [04_while_10952_A+B - 5](Algorithm/Baekjoon/04_while_10952.py)
+2. [04_while_10951_A+B - 4](Algorithm/Baekjoon/04_while_10951.py)
+3. [04_while_1110_더하기 사이클](Algorithm/Baekjoon/04_while_1110.py)
 
 ### Programmers
 
