@@ -51,7 +51,7 @@
 
 1. 
 1. [02_if_2884](Algorithm/Baekjoon/02_if_2884.py)
-2. [03_if_2739](Algorithm/Baekjoon/03_if_2739.py)
+2. [03_for_2739](Algorithm/Baekjoon/03_for_2739.py)
 2. 
 
 ### Programmers
