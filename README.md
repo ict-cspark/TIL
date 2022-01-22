@@ -110,7 +110,7 @@
 #### Level 1
 
 1. [직사각형 별찍기](Algorithm/Programmers/level1_직사각형 별찍기.py)
-2. 
+2.  [직사각형 별찍기](Algorithm/Programmers/level1_직사각형 별찍기.py)
 
 #### Level 2
 
