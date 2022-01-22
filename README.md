@@ -109,8 +109,8 @@
 
 #### Level 1
 
-1. [직사각형 별찍기](Algorithm/Programmers/level1_직사각형 별찍기.py)
-2. [직사각형 별찍기](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Programmers/level1_직사각형 별찍기.py)
+1. [직사각형 별찍기](Algorithm/Programmers/Level1/level1_직사각형_별찍기.py)
+2. 
 
 #### Level 2
 
