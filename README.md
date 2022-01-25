@@ -68,6 +68,8 @@
 7. [01_10998_AxB](Algorithm/Baekjoon/Step1/01_10998.py)
 8. [01_1008_A/B](Algorithm/Baekjoon/Step1/01_1008.py)
 9. [01_10869_사칙연산](Algorithm/Baekjoon/Step1/01_10869.py)
+9. [01_10926_??!](Algorithm/Baekjoon/Step1/01_10926.py)
+9. [01_18108_1998년생인 내가 태국에서는 2541년생?!](Algorithm/Baekjoon/Step1/01_18108.py)
 10. [01_10430_나머지](Algorithm/Baekjoon/Step1/01_10430.py)
 11. [01_2588_곱셈](Algorithm/Baekjoon/Step1/01_2588.py)
 
@@ -101,15 +103,32 @@
 
 #### 5단계 - 1차원 배열
 
-1. 
+1. [05_list_10818_최소, 최대](Algorithm/Baekjoon/Step5/05_list_10818.py)
+1. [05_list_2562_최댓값](Algorithm/Baekjoon/Step5/05_list_2562.py)
+1. [05_list_2577_숫자의 개수](Algorithm/Baekjoon/Step5/05_list_2577.py)
+1. [05_list_3052_나머지](Algorithm/Baekjoon/Step5/05_list_3052.py)
+1. [05_list_1546_평균](Algorithm/Baekjoon/Step5/05_list_1546.py)
+1. [05_list_8958_OX퀴즈](Algorithm/Baekjoon/Step5/05_list_8958.py)
+1. [05_list_4344_평균은 넘겠지](Algorithm/Baekjoon/Step5/05_list_4344.py)
 
 #### 6단계 - 함수
 
-1. 
+1. [06_function_15596_정수 N개의 합](Algorithm/Baekjoon/Step6/06_function_15596.py)
+1. [06_function_4673_셀프 넘버](Algorithm/Baekjoon/Step6/06_function_4673.py)
+1. [06_function_1065_한수](Algorithm/Baekjoon/Step6/06_function_1065.py)
 
 #### 7단계 - 문자열
 
-1. 
+1. [07_String_11654_아스키 코드](Algorithm/Baekjoon/Step7/07_String_11654.py)
+1. [07_String_11720_숫자의 합](Algorithm/Baekjoon/Step7/07_String_11720.py)
+1. [07_String_10809_알파벳 찾기](Algorithm/Baekjoon/Step7/07_String_10809.py)
+1. [07_String_2675._문자열 반복](Algorithm/Baekjoon/Step7/07_String_2675.py)
+1. [07_String_1157_단어 공부](Algorithm/Baekjoon/Step7/07_String_1157.py)
+1. [07_String_1152_단어의 개수](Algorithm/Baekjoon/Step7/07_String_1152.py)
+1. [07_String_2908_상수](Algorithm/Baekjoon/Step7/07_String_2908.py)
+1. [07_String_5622._다이얼](Algorithm/Baekjoon/Step7/07_String_5622.py)
+1. [07_String_2941_크로아티아 알파벳](Algorithm/Baekjoon/Step7/07_String_2941.py)
+1. [07_String_1316_그룹 단어 체커](Algorithm/Baekjoon/Step7/07_String_1316.py)
 
 ## Programmers
 
