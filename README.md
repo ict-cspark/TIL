@@ -188,7 +188,7 @@
 52. [[Kakao]키패드_누르기](Algorithm/Programmers/Level1/level1_kakao_키패드_누르기.py)
 53. [[Kakao]숫자_문자열과_영단어](Algorithm/Programmers/Level1/level1_kakao_숫자_문자열과_영단어.py)
 54. [[Kakao]신규_아이디_추천](Algorithm/Programmers/Level1/level1_kakao_신규_아이디_추천.py)
-55. 
+55. [[Kakao]신고_결과_받기](Algorithm/Programmers/Level1/level1_kakao_신고_결과_받기.py)
 
 #### Level 2
 
