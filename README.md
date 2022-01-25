@@ -122,11 +122,11 @@
 1. [07_String_11654_아스키 코드](Algorithm/Baekjoon/Step7/07_String_11654.py)
 1. [07_String_11720_숫자의 합](Algorithm/Baekjoon/Step7/07_String_11720.py)
 1. [07_String_10809_알파벳 찾기](Algorithm/Baekjoon/Step7/07_String_10809.py)
-1. [07_String_2675._문자열 반복](Algorithm/Baekjoon/Step7/07_String_2675.py)
+1. [07_String_2675_문자열 반복](Algorithm/Baekjoon/Step7/07_String_2675.py)
 1. [07_String_1157_단어 공부](Algorithm/Baekjoon/Step7/07_String_1157.py)
 1. [07_String_1152_단어의 개수](Algorithm/Baekjoon/Step7/07_String_1152.py)
 1. [07_String_2908_상수](Algorithm/Baekjoon/Step7/07_String_2908.py)
-1. [07_String_5622._다이얼](Algorithm/Baekjoon/Step7/07_String_5622.py)
+1. [07_String_5622_다이얼](Algorithm/Baekjoon/Step7/07_String_5622.py)
 1. [07_String_2941_크로아티아 알파벳](Algorithm/Baekjoon/Step7/07_String_2941.py)
 1. [07_String_1316_그룹 단어 체커](Algorithm/Baekjoon/Step7/07_String_1316.py)
 
