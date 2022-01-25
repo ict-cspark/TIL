@@ -16,10 +16,15 @@ n을 d(n)의 생성자라고 한다. 위의 수열에서 33은 39의 생성자�
 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
 '''
 
-def solve(a):
-    ans = 0
+total_num = set(range(1,10001))
+nonself_num = set()
 
-    return ans
+for i in total_num:
+    for j in str(i):
+        i += int(j)
+    nonself_num.add(i)
 
-x = solve([1,2,3,4,5])
-print(x)
+result = sorted(total_num - nonself_num)
+
+for i in result:
+    print(i)
