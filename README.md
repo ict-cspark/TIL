@@ -27,7 +27,7 @@
 
 #### Python 기초 100제
 
-+ 
++ [Python 기초 100제](Algorithm/CodeUp/codeup_basic100.py)
 
 ## SWExpertAcademy
 
