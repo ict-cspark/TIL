@@ -23,6 +23,12 @@
 
 ## ⏳ Algorithm
 
+## CodeUp
+
+#### Python 기초 100제
+
++ 
+
 ## SWExpertAcademy
 
 #### 파이썬 프로그래밍 기초(1)
