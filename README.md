@@ -19,6 +19,7 @@
 2. [2022/01/24](Python/live_220124.md)
 2. [2022/01/26](Python/live_220126.md)
 2. [2022/01/28](Python/live_220128.md)
+2. 
 
 ---
 
@@ -137,6 +138,10 @@
 1. [07_String_5622_다이얼](Algorithm/Baekjoon/Step7/07_String_5622.py)
 1. [07_String_2941_크로아티아 알파벳](Algorithm/Baekjoon/Step7/07_String_2941.py)
 1. [07_String_1316_그룹 단어 체커](Algorithm/Baekjoon/Step7/07_String_1316.py)
+
+#### 8단계 - 기본 수학1
+
+1. 
 
 ## Programmers
 
