@@ -1,4 +1,4 @@
-# Programmers - Level8 - 달팽이는 올라가고 싶다
+# Baekjoon Algorithm 8단계 Math01 - 달팽이는 올라가고 싶다
 
 '''
 땅 위에 달팽이가 있다. 이 달팽이는 높이가 V미터인 나무 막대를 올라갈 것이다.
@@ -7,4 +7,21 @@
 
 달팽이가 나무 막대를 모두 올라가려면, 며칠이 걸리는지 구하는 프로그램을 작성하시오.
 '''
+
+A, B, V = map(int, input().split(' '))
+
+x = V - A
+y = A - B
+
+result = 1
+if type(x/y) == float:
+    if (x/y).is_integer():
+        result += int(x/y)
+    else:
+        result += 1
+        result += int(x/y)
+else:
+    result += int(x/y)
+
+print(result)
 

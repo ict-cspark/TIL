@@ -1,4 +1,4 @@
-# Programmers - Level7 - 다이얼
+# Baekjoon Algorithm 7단계 String - 다이얼
 
 '''
 상근이의 할머니는 아래 그림과 같이 오래된 다이얼 전화기를 사용한다.

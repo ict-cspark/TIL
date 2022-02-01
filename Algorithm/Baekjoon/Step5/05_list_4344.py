@@ -1,4 +1,4 @@
-# Programmers - Level5 - 평균은 넘겠지
+# Baekjoon Algorithm 5단계 List - 평균은 넘겠지
 
 '''
 첫째 줄에는 테스트 케이스의 개수 C가 주어진다.

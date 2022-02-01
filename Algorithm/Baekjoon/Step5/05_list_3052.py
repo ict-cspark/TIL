@@ -1,4 +1,4 @@
-# Programmers - Level5 - 나머지
+# Baekjoon Algorithm 5단계 List - 나머지
 
 '''
 두 자연수 A와 B가 있을 때, A%B는 A를 B로 나눈 나머지 이다. 예를 들어, 7, 14, 27, 38을 3으로 나눈 나머지는 1, 2, 0, 2이다. 

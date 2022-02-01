@@ -1,4 +1,4 @@
-# Programmers - Level8 - 분수찾기
+# Baekjoon Algorithm 8단계 Math01 - 분수찾기
 
 '''
 무한히 큰 배열에 다음과 같이 분수들이 적혀있다.

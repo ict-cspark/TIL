@@ -1,4 +1,4 @@
-# Programmers - Level8 - 벌집
+# Baekjoon Algorithm 8단계 Math01 - 벌집
 
 '''
 위의 그림과 같이 육각형으로 이루어진 벌집이 있다. 
