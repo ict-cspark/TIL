@@ -145,7 +145,7 @@
 1. [08_Math01_2292_벌집](Algorithm/Baekjoon/Step8/08_Math01_2292.py)
 1. [08_Math01_1193_분수찾기](Algorithm/Baekjoon/Step8/08_Math01_1193.py)
 1. [08_Math01_2869_달팽이는_올라가고_싶다](Algorithm/Baekjoon/Step8/08_Math01_2869.py)
-1. -
+1. [08_Math01_10250_ACM_호텔](Algorithm/Baekjoon/Step8/08_Math01_10250.py)
 
 ## Programmers
 
