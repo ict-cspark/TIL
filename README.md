@@ -29,7 +29,13 @@
 
 ---
 
-## ⏳ Algorithm
+## 🎲Algorithm
+
+1. -
+
+---
+
+## ⏳ Algorithm Solving
 
 ## CodeUp
 
@@ -70,7 +76,7 @@
 
 
 
-## BaekJoon Algorithm
+## BaekJoon Online Judge
 
 #### 1단계 - 입출력과 사칙연산
 
