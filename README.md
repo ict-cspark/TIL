@@ -161,7 +161,7 @@
 1. [08_Math01_2775_부녀회장이_될테야](Algorithm/Baekjoon/Step8/08_Math01_2775.py)
 1. [08_Math01_2839_설탕_배달](Algorithm/Baekjoon/Step8/08_Math01_2839.py)
 1. [08_Math01_10757_큰_수_A+B](Algorithm/Baekjoon/Step8/08_Math01_10757.py)
-1. -
+1. [08_Math01_1011_Fly_me_to_the_Alpha_Centauri](Algorithm/Baekjoon/Step8/08_Math01_1011.py)
 
 #### 9단계 - 기본 수학2
 
