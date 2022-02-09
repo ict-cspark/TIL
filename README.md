@@ -26,13 +26,13 @@
 
 1. [2022/02/03](Learn/Web/live_220203.md)
 2. [2022/02/07](Learn/Web/live_220207.md)
-2. 
+2. [2022/02/11](Learn/Web/live_220211.md)
 
 ---
 
 ## 🎲Algorithm
 
-1. 
+1. [2022/02/09](https://github.com/ict-cspark/TIL/blob/master/Learn/Algorithm/live_220209.md)
 
 ---
 
