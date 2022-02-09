@@ -4,28 +4,28 @@
 
 ## 🚀 StartCamp
 
-1. [CLI 사용하기](Startcamp/CLI.md)
-2. [마크다운 사용법](Startcamp/markdown.md)
-3. [Git 기초 첫 번째](Startcamp/git.md)
-3. [Git 기초 두 번째 ](Startcamp/git2.md)
+1. [CLI 사용하기](Learn/Startcamp/CLI.md)
+2. [마크다운 사용법](Learn/Startcamp/markdown.md)
+3. [Git 기초 첫 번째](Learn/Startcamp/git.md)
+3. [Git 기초 두 번째 ](Learn/Startcamp/git2.md)
 
 ---
 
 ## 💻 Python
 
-1. [2022/01/17](Python/live_220117.md)
-2. [2022/01/19](Python/live_220119.md)
-3. [2022/01/21](Python/live_220121.md)
-4. [2022/01/24](Python/live_220124.md)
-5. [2022/01/26](Python/live_220126.md)
-6. [2022/01/28](Python/live_220128.md)
+1. [2022/01/17](Learn/Python/live_220117.md)
+2. [2022/01/19](Learn/Python/live_220119.md)
+3. [2022/01/21](Learn/Python/live_220121.md)
+4. [2022/01/24](Learn/Python/live_220124.md)
+5. [2022/01/26](Learn/Python/live_220126.md)
+6. [2022/01/28](Learn/Python/live_220128.md)
 
 ---
 
 ## 🌍 Web
 
-1. [2022/02/03](Web/live_220203.md)
-2. [2022/02/07](Web/live_220207.md)
+1. [2022/02/03](Learn/Web/live_220203.md)
+2. [2022/02/07](Learn/Web/live_220207.md)
 2. 
 
 ---
