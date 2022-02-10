@@ -166,7 +166,7 @@
 
 #### 9단계 - 기본 수학2
 
-1. 
+1. [09_Math02_3009_네_번째_점](Algorithm/Baekjoon/Step9/09_Math02_3009.py)
 
 ## Programmers
 
