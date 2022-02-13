@@ -77,15 +77,15 @@
 
 #### 파이썬 SW문제해결 기본 List1
 
-1. [4828_min_max](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Python_SW_List1/4828_min_max.py)
-1. [4831_전기버스](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Python_SW_List1/4831_전기버스.py)
-1. [4834_숫자카드](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Python_SW_List1/4834_숫자카드.py)
-1. [4835_구간합](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Python_SW_List1/4835_구간합.py)
+1. [4828_min_max](Algorithm/SWExpertAcademy/Python_SW_List1/4828_min_max.py)
+1. [4831_전기버스](Algorithm/SWExpertAcademy/Python_SW_List1/4831_전기버스.py)
+1. [4834_숫자카드](Algorithm/SWExpertAcademy/Python_SW_List1/4834_숫자카드.py)
+1. [4835_구간합](Algorithm/SWExpertAcademy/Python_SW_List1/4835_구간합.py)
 
 #### Problem Solving
 
-1. [1206_View](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1206_View.py)
-1. [1208_Flatten](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1208_Flatten.py)
+1. [1206_View](Algorithm/SWExpertAcademy/Problem_Solving/1206_View.py)
+1. [1208_Flatten](Algorithm/SWExpertAcademy/Problem_Solving/1208_Flatten.py)
 
 ## BaekJoon Online Judge
 
