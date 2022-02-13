@@ -176,7 +176,9 @@
 
 #### 9단계 - 기본 수학2
 
+1. [09_Math02_1085_직사각형에서_탈출](Algorithm/Baekjoon/Step9/09_Math02_1085.py)
 1. [09_Math02_3009_네_번째_점](Algorithm/Baekjoon/Step9/09_Math02_3009.py)
+1. [09_Math02_4153_직각삼각형](Algorithm/Baekjoon/Step9/09_Math02_4153.py)
 
 ## Programmers
 
