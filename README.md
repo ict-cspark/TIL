@@ -16,9 +16,9 @@
 1. [2022/01/17](Learn/Python/live_220117.md)
 2. [2022/01/19](Learn/Python/live_220119.md)
 3. [2022/01/21](Learn/Python/live_220121.md)
-4. [2022/01/24](Learn/Python/live_220124.md)
+4. [2022/01/24 (PJT)](Learn/Python/live_220124.md)
 5. [2022/01/26](Learn/Python/live_220126.md)
-6. [2022/01/28](Learn/Python/live_220128.md)
+6. [2022/01/28 (PJT)](Learn/Python/live_220128.md)
 
 ---
 
@@ -26,7 +26,7 @@
 
 1. [2022/02/03](Learn/Web/live_220203.md)
 2. [2022/02/07](Learn/Web/live_220207.md)
-2. [2022/02/11](Learn/Web/live_220211.md)
+2. [2022/02/11 (PJT)](Learn/Web/live_220211.md)
 
 ---
 
@@ -75,7 +75,13 @@
 2. [python02_45](Algorithm/SWExpertAcademy/Python_Basic_02/python02_45_exam.py)
 23. [python02_46](Algorithm/SWExpertAcademy/Python_Basic_02/python02_46_exam.py)
 
+#### 파이썬 SW문제해결 기본 List1
 
+1. 
+
+#### Problem Solving
+
+1. 
 
 ## BaekJoon Online Judge
 
