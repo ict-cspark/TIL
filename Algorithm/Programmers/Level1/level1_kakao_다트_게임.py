@@ -16,17 +16,28 @@ Single(S), Double(D), Triple(T)은 점수마다 하나씩 존재한다.
 0~10의 정수와 문자 S, D, T, *, #로 구성된 문자열이 입력될 시 총점수를 반환하는 함수를 작성하라.
 '''
 
+# 정규 표현식 사용
 import re
 
 def solution(dartResult):
+    # bonus와 option 딕셔너리를 생성해 숫자 값으로 바꾸기 위해 키와 value 값을 설정
     bonus = {'S':1,'D':2,'T':3}
     option = {'':1,'*':2, '#':-1}
+
+    # 정규표현식을 사용하기 위한 구문 re.compile('규칙구문')
     p = re.compile('(\d+)([SDT])([*#]?)')
+    # 결과값을 리스트로 출력
     dart = p.findall(dartResult)
+    # 시도 횟수만큼 반복문을 돌림
     for i in range(len(dart)):
+        # 만약 스타상이 나오고 던진 차수가 2회차 이상일 경우
+        # 이전 차수의 값을 2배로 바꿔서 저장
         if dart[i][2] == '*' and i>0:
             dart[i-1] *= 2
+
+        # 점수 ** (제곱) bonus * option 값을 dart[i]에 저장
         dart[i] = int(dart[i][0]) ** bonus[dart[i][1]] * option[dart[i][2]]
 
+    # dart의 합계를 구해서 answer에 저장 후 return
     answer = sum(dart)
     return answer
