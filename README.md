@@ -32,7 +32,9 @@
 
 ## 🎲Algorithm
 
-1. [2022/02/09](https://github.com/ict-cspark/TIL/blob/master/Learn/Algorithm/live_220209.md)
+1. [2022/02/09](Learn/Algorithm/live_220209.md)
+1. [2022/02/14](Learn/Algorithm/live_220214.md)
+1. [2022/02/16](Learn/Algorithm/live_220216.md)
 
 ---
 
@@ -45,6 +47,14 @@
 + [Python 기초 100제](Algorithm/CodeUp/codeup_basic100.py)
 
 ## SWExpertAcademy
+
+#### # Problem Solving
+
+1. [1206_View](Algorithm/SWExpertAcademy/Problem_Solving/1206_View.py)
+1. [1208_Flatten](Algorithm/SWExpertAcademy/Problem_Solving/1208_Flatten.py)
+1. [1209_Sum](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1209_Sum.py)
+1. [1210_ladder1](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1210_ladder1.py)
+1. [1954_달팽이숫자](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1954_달팽이숫자.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -82,12 +92,18 @@
 1. [4834_숫자카드](Algorithm/SWExpertAcademy/Python_SW_List1/4834_숫자카드.py)
 1. [4835_구간합](Algorithm/SWExpertAcademy/Python_SW_List1/4835_구간합.py)
 
-#### Problem Solving
+#### 파이썬 SW문제해결 기본 List2
 
-1. [1206_View](Algorithm/SWExpertAcademy/Problem_Solving/1206_View.py)
-1. [1208_Flatten](Algorithm/SWExpertAcademy/Problem_Solving/1208_Flatten.py)
+1. [4836_색칠하기](Algorithm/SWExpertAcademy/Python_SW_List2/4836_색칠하기.py)
+2. [4837_부분집합의합](Algorithm/SWExpertAcademy/Python_SW_List2/4837_부분집합의합.py)
+3. [4839_이진탐색](Algorithm/SWExpertAcademy/Python_SW_List2/4839_이진탐색.py)
+4. [4843_특별한정렬](Algorithm/SWExpertAcademy/Python_SW_List2/4843_특별한정렬.py)
 
 ## BaekJoon Online Judge
+
+#### # BOJ
+
+1. [BOJ_11057_오르막_수](Algorithm/Baekjoon/BOJ/BOJ_11057.py)
 
 #### 1단계 - 입출력과 사칙연산
 
