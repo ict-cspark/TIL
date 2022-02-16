@@ -52,9 +52,12 @@
 
 1. [1206_View](Algorithm/SWExpertAcademy/Problem_Solving/1206_View.py)
 1. [1208_Flatten](Algorithm/SWExpertAcademy/Problem_Solving/1208_Flatten.py)
-1. [1209_Sum](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1209_Sum.py)
-1. [1210_ladder1](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1210_ladder1.py)
-1. [1954_달팽이숫자](https://github.com/ict-cspark/TIL/blob/master/Algorithm/SWExpertAcademy/Problem_Solving/1954_달팽이숫자.py)
+1. [1209_Sum](Algorithm/SWExpertAcademy/Problem_Solving/1209_Sum.py)
+1. [1210_ladder1](Algorithm/SWExpertAcademy/Problem_Solving/1210_ladder1.py)
+1. [1954_달팽이숫자](Algorithm/SWExpertAcademy/Problem_Solving/1954_달팽이숫자.py)
+1. [9386_연속한_1의_개수](Algorithm/SWExpertAcademy/Problem_Solving/9386_연속한_1의_개수.py)
+1. [1213_String.py](Algorithm/SWExpertAcademy/Problem_Solving/1213_String.py)
+1. [1221_GNS.py](Algorithm/SWExpertAcademy/Problem_Solving/1221_GNS.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -104,6 +107,7 @@
 #### # BOJ
 
 1. [BOJ_11057_오르막_수](Algorithm/Baekjoon/BOJ/BOJ_11057.py)
+1. [BOJ_2447_별_찍기_10](Algorithm/Baekjoon/BOJ/BOJ_2447_별_찍기_10.py)
 
 #### 1단계 - 입출력과 사칙연산
 
