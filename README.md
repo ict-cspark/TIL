@@ -58,6 +58,8 @@
 1. [9386_연속한_1의_개수](Algorithm/SWExpertAcademy/Problem_Solving/9386_연속한_1의_개수.py)
 1. [1213_String.py](Algorithm/SWExpertAcademy/Problem_Solving/1213_String.py)
 1. [1221_GNS.py](Algorithm/SWExpertAcademy/Problem_Solving/1221_GNS.py)
+1. [1216_회문2](Algorithm/SWExpertAcademy/Problem_Solving/1216_회문2.py)
+1. [3143_가장빠른문자열타이핑](Algorithm/SWExpertAcademy/Problem_Solving/3143_가장빠른문자열타이핑.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -101,6 +103,12 @@
 2. [4837_부분집합의합](Algorithm/SWExpertAcademy/Python_SW_List2/4837_부분집합의합.py)
 3. [4839_이진탐색](Algorithm/SWExpertAcademy/Python_SW_List2/4839_이진탐색.py)
 4. [4843_특별한정렬](Algorithm/SWExpertAcademy/Python_SW_List2/4843_특별한정렬.py)
+
+#### 파이썬 SW문제해결 기본 String
+
+1. [4846_문자열비교](Algorithm/SWExpertAcademy/Python_SW_String/4846_문자열비교.py)
+2. [4861_회문](Algorithm/SWExpertAcademy/Python_SW_String/4861_회문.py)
+3. [4865_글자수](Algorithm/SWExpertAcademy/Python_SW_String/4865_글자수.py)
 
 ## BaekJoon Online Judge
 
