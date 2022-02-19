@@ -61,6 +61,11 @@
 1. [1221_GNS.py](Algorithm/SWExpertAcademy/Problem_Solving/1221_GNS.py)
 1. [1216_회문2](Algorithm/SWExpertAcademy/Problem_Solving/1216_회문2.py)
 1. [3143_가장빠른문자열타이핑](Algorithm/SWExpertAcademy/Problem_Solving/3143_가장빠른문자열타이핑.py)
+1. [1859_백만장자프로젝트.py](Algorithm/SWExpertAcademy/Problem_Solving/1859_백만장자프로젝트.py)
+1. [2001_파리퇴치.py](Algorithm/SWExpertAcademy/Problem_Solving/2001_파리퇴치.py)
+1. [5356_의석이의세로로말해요.py](Algorithm/SWExpertAcademy/Problem_Solving/5356_의석이의세로로말해요.py)
+1. [5432_쇠막대기자르기.py](Algorithm/SWExpertAcademy/Problem_Solving/5432_쇠막대기자르기.py)
+1. [5789_현주의상자바꾸기.py](Algorithm/SWExpertAcademy/Problem_Solving/5789_현주의상자바꾸기.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -115,8 +120,9 @@
 
 #### # BOJ
 
-1. [BOJ_11057_오르막_수](Algorithm/Baekjoon/BOJ/BOJ_11057.py)
+1. [BOJ_11057_오르막_수](Algorithm/Baekjoon/BOJ/BOJ_11057_오르막_수.py)
 1. [BOJ_2447_별_찍기_10](Algorithm/Baekjoon/BOJ/BOJ_2447_별_찍기_10.py)
+1. [BOJ_1931_회의실_배정](Algorithm/Baekjoon/BOJ/BOJ_1931_회의실_배정.py)
 
 #### 1단계 - 입출력과 사칙연산
 
