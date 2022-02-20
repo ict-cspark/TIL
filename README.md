@@ -66,6 +66,7 @@
 1. [5356_의석이의세로로말해요.py](Algorithm/SWExpertAcademy/Problem_Solving/5356_의석이의세로로말해요.py)
 1. [5432_쇠막대기자르기.py](Algorithm/SWExpertAcademy/Problem_Solving/5432_쇠막대기자르기.py)
 1. [5789_현주의상자바꾸기.py](Algorithm/SWExpertAcademy/Problem_Solving/5789_현주의상자바꾸기.py)
+1. 
 
 #### 파이썬 프로그래밍 기초(1)
 
