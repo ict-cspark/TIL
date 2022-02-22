@@ -36,6 +36,7 @@
 1. [2022/02/14](Learn/Algorithm/live_220214.md)
 1. [2022/02/16](Learn/Algorithm/live_220216.md)
 1. [2022/02/18](Learn/Algorithm/live_220218.md)
+1. [2022/02/21](Learn/Algorithm/live_220221.md)
 
 ---
 
@@ -61,12 +62,19 @@
 1. [1221_GNS.py](Algorithm/SWExpertAcademy/Problem_Solving/1221_GNS.py)
 1. [1216_회문2](Algorithm/SWExpertAcademy/Problem_Solving/1216_회문2.py)
 1. [3143_가장빠른문자열타이핑](Algorithm/SWExpertAcademy/Problem_Solving/3143_가장빠른문자열타이핑.py)
-1. [1859_백만장자프로젝트.py](Algorithm/SWExpertAcademy/Problem_Solving/1859_백만장자프로젝트.py)
-1. [2001_파리퇴치.py](Algorithm/SWExpertAcademy/Problem_Solving/2001_파리퇴치.py)
-1. [5356_의석이의세로로말해요.py](Algorithm/SWExpertAcademy/Problem_Solving/5356_의석이의세로로말해요.py)
-1. [5432_쇠막대기자르기.py](Algorithm/SWExpertAcademy/Problem_Solving/5432_쇠막대기자르기.py)
-1. [5789_현주의상자바꾸기.py](Algorithm/SWExpertAcademy/Problem_Solving/5789_현주의상자바꾸기.py)
-1. 
+1. [1859_백만장자프로젝트](Algorithm/SWExpertAcademy/Problem_Solving/1859_백만장자프로젝트.py)
+1. [2001_파리퇴치](Algorithm/SWExpertAcademy/Problem_Solving/2001_파리퇴치.py)
+1. [5356_의석이의세로로말해요](Algorithm/SWExpertAcademy/Problem_Solving/5356_의석이의세로로말해요.py)
+1. [5432_쇠막대기자르기](Algorithm/SWExpertAcademy/Problem_Solving/5432_쇠막대기자르기.py)
+1. [5789_현주의상자바꾸기](Algorithm/SWExpertAcademy/Problem_Solving/5789_현주의상자바꾸기.py)
+1. [1234_비밀번호](Algorithm/SWExpertAcademy/Problem_Solving/1234_비밀번호.py)
+1. [1945_간단한소인수분해](Algorithm/SWExpertAcademy/Problem_Solving/1945_간단한소인수분해.py)
+1. [1961_숫자배열회전](Algorithm/SWExpertAcademy/Problem_Solving/1961_숫자배열회전.py)
+1. [1974_스도쿠검증](Algorithm/SWExpertAcademy/Problem_Solving/1974_스도쿠검증.py)
+1. [1979_어디에단어가들어갈수있을까](Algorithm/SWExpertAcademy/Problem_Solving/1979_어디에단어가들어갈수있을까.py)
+1. [2005_파스칼의삼각형](Algorithm/SWExpertAcademy/Problem_Solving/2005_파스칼의삼각형.py)
+1. [4408_자기방으로돌아가기](Algorithm/SWExpertAcademy/Problem_Solving/4408_자기방으로돌아가기.py)
+1. [6485_삼성시의버스노선](Algorithm/SWExpertAcademy/Problem_Solving/6485_삼성시의버스노선.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -116,6 +124,12 @@
 1. [4846_문자열비교](Algorithm/SWExpertAcademy/Python_SW_String/4846_문자열비교.py)
 2. [4861_회문](Algorithm/SWExpertAcademy/Python_SW_String/4861_회문.py)
 3. [4865_글자수](Algorithm/SWExpertAcademy/Python_SW_String/4865_글자수.py)
+
+#### 파이썬 SW문제해결 기본 Stack1
+
+1. [4866_괄호검사](Algorithm/SWExpertAcademy/Python_SW_Stack1/4866_괄호검사.py)
+2. [4873_반복문자지우기](Algorithm/SWExpertAcademy/Python_SW_Stack1/4873_반복문자지우기.py)
+3. [4869_종이붙이기](Algorithm/SWExpertAcademy/Python_SW_Stack1/4869_종이붙이기.py)
 
 ## BaekJoon Online Judge
 
