@@ -37,6 +37,7 @@
 1. [2022/02/16](Learn/Algorithm/live_220216.md)
 1. [2022/02/18](Learn/Algorithm/live_220218.md)
 1. [2022/02/21](Learn/Algorithm/live_220221.md)
+1. [2022/02/23](Algorithm/live_220223.md)
 
 ---
 
@@ -75,6 +76,9 @@
 1. [2005_파스칼의삼각형](Algorithm/SWExpertAcademy/Problem_Solving/2005_파스칼의삼각형.py)
 1. [4408_자기방으로돌아가기](Algorithm/SWExpertAcademy/Problem_Solving/4408_자기방으로돌아가기.py)
 1. [6485_삼성시의버스노선](Algorithm/SWExpertAcademy/Problem_Solving/6485_삼성시의버스노선.py)
+1. [11315_오목_판정](Algorithm/SWExpertAcademy/Problem_Solving/11315_오목_판정.py)
+1. [1220_Magnetic](Algorithm/SWExpertAcademy/Problem_Solving/1220_Magnetic.py)
+1. [1223_계산기2](Algorithm/SWExpertAcademy/Problem_Solving/1223_계산기2.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -229,6 +233,7 @@
 1. [09_Math02_1085_직사각형에서_탈출](Algorithm/Baekjoon/Step9/09_Math02_1085.py)
 1. [09_Math02_3009_네_번째_점](Algorithm/Baekjoon/Step9/09_Math02_3009.py)
 1. [09_Math02_4153_직각삼각형](Algorithm/Baekjoon/Step9/09_Math02_4153.py)
+1. [09_Math02_3053_택시_기하학](Algorithm/Baekjoon/Step9/09_Math02_3053.py)
 
 ## Programmers
 
