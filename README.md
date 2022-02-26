@@ -37,8 +37,8 @@
 1. [2022/02/16](Learn/Algorithm/live_220216.md)
 1. [2022/02/18](Learn/Algorithm/live_220218.md)
 1. [2022/02/21](Learn/Algorithm/live_220221.md)
-1. [2022/02/23](Algorithm/live_220223.md)
-1. [2022/02/25](Algorithm/live_220225.md)
+1. [2022/02/23](Learn/Algorithm/live_220223.md)
+1. [2022/02/25](Learn/Algorithm/live_220225.md)
 
 ---
 
@@ -82,7 +82,7 @@
 1. [1223_계산기2](Algorithm/SWExpertAcademy/Problem_Solving/1223_계산기2.py)
 1. [1860_진기의_최고급_붕어빵](Algorithm/SWExpertAcademy/Problem_Solving/1860_진기의_최고급_붕어빵.py)
 1. [3499_퍼펙트_셔플](Algorithm/SWExpertAcademy/Problem_Solving/3499_퍼펙트_셔플.py)
-1. [6190. 정곤이의 단조 증가하는 수](Algorithm/SWExpertAcademy/Problem_Solving/6190. 정곤이의 단조 증가하는 수.py)
+1. [6190_정곤이의_단조_증가하는_수](Algorithm/SWExpertAcademy/Problem_Solving/6190_정곤이의_단조_증가하는_수.py)
 1. [1224_계산기3](Algorithm/SWExpertAcademy/Problem_Solving/1224_계산기3.py)
 1. [1225_암호생성기](Algorithm/SWExpertAcademy/Problem_Solving/1225_암호생성기.py)
 
