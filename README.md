@@ -80,9 +80,11 @@
 1. [11315_오목_판정](Algorithm/SWExpertAcademy/Problem_Solving/11315_오목_판정.py)
 1. [1220_Magnetic](Algorithm/SWExpertAcademy/Problem_Solving/1220_Magnetic.py)
 1. [1223_계산기2](Algorithm/SWExpertAcademy/Problem_Solving/1223_계산기2.py)
-1. [1860_진기의_최고급_붕어빵.py](Algorithm/SWExpertAcademy/Problem_Solving/1860_진기의_최고급_붕어빵.py)
-1. [3499_퍼펙트_셔플.py](Algorithm/SWExpertAcademy/Problem_Solving/3499_퍼펙트_셔플.py)
-1. [6190. 정곤이의 단조 증가하는 수.py](Algorithm/SWExpertAcademy/Problem_Solving/6190. 정곤이의 단조 증가하는 수.py)
+1. [1860_진기의_최고급_붕어빵](Algorithm/SWExpertAcademy/Problem_Solving/1860_진기의_최고급_붕어빵.py)
+1. [3499_퍼펙트_셔플](Algorithm/SWExpertAcademy/Problem_Solving/3499_퍼펙트_셔플.py)
+1. [6190. 정곤이의 단조 증가하는 수](Algorithm/SWExpertAcademy/Problem_Solving/6190. 정곤이의 단조 증가하는 수.py)
+1. [1224_계산기3](Algorithm/SWExpertAcademy/Problem_Solving/1224_계산기3.py)
+1. [1225_암호생성기](Algorithm/SWExpertAcademy/Problem_Solving/1225_암호생성기.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -138,6 +140,18 @@
 1. [4866_괄호검사](Algorithm/SWExpertAcademy/Python_SW_Stack1/4866_괄호검사.py)
 2. [4873_반복문자지우기](Algorithm/SWExpertAcademy/Python_SW_Stack1/4873_반복문자지우기.py)
 3. [4869_종이붙이기](Algorithm/SWExpertAcademy/Python_SW_Stack1/4869_종이붙이기.py)
+
+#### 파이썬 SW문제해결 기본 Stack2
+
+1. [4874_Forth](Algorithm/SWExpertAcademy/Python_SW_Stack2/4874_Forth.py)
+2. [4875_미로](Algorithm/SWExpertAcademy/Python_SW_Stack2/4875_미로.py)
+3. [4880_토너먼트카드게임](Algorithm/SWExpertAcademy/Python_SW_Stack2/4880_토너먼트카드게임.py)
+4. [4881_배열최소합](Algorithm/SWExpertAcademy/Python_SW_Stack2/4881_배열최소합.py)
+
+#### 파이썬 SW문제해결 기본 Queue
+
+1. [5105_미로의거리_DFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_DFS.py)
+2. [5105_미로의거리_BFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_BFS.py)
 
 ## BaekJoon Online Judge
 
