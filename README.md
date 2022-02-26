@@ -38,6 +38,7 @@
 1. [2022/02/18](Learn/Algorithm/live_220218.md)
 1. [2022/02/21](Learn/Algorithm/live_220221.md)
 1. [2022/02/23](Algorithm/live_220223.md)
+1. [2022/02/25](Algorithm/live_220225.md)
 
 ---
 
@@ -79,6 +80,9 @@
 1. [11315_오목_판정](Algorithm/SWExpertAcademy/Problem_Solving/11315_오목_판정.py)
 1. [1220_Magnetic](Algorithm/SWExpertAcademy/Problem_Solving/1220_Magnetic.py)
 1. [1223_계산기2](Algorithm/SWExpertAcademy/Problem_Solving/1223_계산기2.py)
+1. [1860_진기의_최고급_붕어빵.py](Algorithm/SWExpertAcademy/Problem_Solving/1860_진기의_최고급_붕어빵.py)
+1. [3499_퍼펙트_셔플.py](Algorithm/SWExpertAcademy/Problem_Solving/3499_퍼펙트_셔플.py)
+1. [6190. 정곤이의 단조 증가하는 수.py](Algorithm/SWExpertAcademy/Problem_Solving/6190. 정곤이의 단조 증가하는 수.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -142,6 +146,7 @@
 1. [BOJ_11057_오르막_수](Algorithm/Baekjoon/BOJ/BOJ_11057_오르막_수.py)
 1. [BOJ_2447_별_찍기_10](Algorithm/Baekjoon/BOJ/BOJ_2447_별_찍기_10.py)
 1. [BOJ_1931_회의실_배정](Algorithm/Baekjoon/BOJ/BOJ_1931_회의실_배정.py)
+1. [BOJ_1244_스위치_켜고_끄기](Algorithm/Baekjoon/BOJ/BOJ_1244_스위치_켜고_끄기.py)
 
 #### 1단계 - 입출력과 사칙연산
 
