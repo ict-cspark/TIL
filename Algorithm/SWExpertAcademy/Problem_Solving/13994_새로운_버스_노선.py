@@ -19,12 +19,12 @@ for test_case in range(1, T + 1):
     N = int(input())                            # 노선 수 N 입력받기 
     bus = [0] * 1001                            # 정류장 리스트를 만들어 인덱스와 정류장번호를 일치시키기 위해 +1을 해서 생성
     for _ in range(N):                          # 노선수만큼 반복문 실행
-        T, A, B = map(int, input().split())     # 버스 타입, 출발, 도착 정류장 T,A,B 입력받기
+        P, A, B = map(int, input().split())     # 버스 타입, 출발, 도착 정류장 P,A,B 입력받기
 
-        if T == 1:                              # 일반버스일 경우 A, B 사이 모든 정류장에 1을 추가
+        if P == 1:                              # 일반버스일 경우 A, B 사이 모든 정류장에 1을 추가
             for a in range(A, B + 1):
                 bus[a] += 1
-        elif T == 2:                            # 급행버스일 경우 2 정류장마다 1번씩 1을 추가
+        elif P == 2:                            # 급행버스일 경우 2 정류장마다 1번씩 1을 추가
             for b in range(A, B + 1, 2):
                 bus[b] += 1
 
