@@ -85,6 +85,8 @@
 1. [6190_정곤이의_단조_증가하는_수](Algorithm/SWExpertAcademy/Problem_Solving/6190_정곤이의_단조_증가하는_수.py)
 1. [1224_계산기3](Algorithm/SWExpertAcademy/Problem_Solving/1224_계산기3.py)
 1. [1225_암호생성기](Algorithm/SWExpertAcademy/Problem_Solving/1225_암호생성기.py)
+1. [6019_기차_사이의_파리](Algorithm/SWExpertAcademy/Problem_Solving/6019_기차_사이의_파리.py)
+1. [13994_새로운_버스_노선](Algorithm/SWExpertAcademy/Problem_Solving/13994_새로운_버스_노선.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -161,6 +163,9 @@
 1. [BOJ_2447_별_찍기_10](Algorithm/Baekjoon/BOJ/BOJ_2447_별_찍기_10.py)
 1. [BOJ_1931_회의실_배정](Algorithm/Baekjoon/BOJ/BOJ_1931_회의실_배정.py)
 1. [BOJ_1244_스위치_켜고_끄기](Algorithm/Baekjoon/BOJ/BOJ_1244_스위치_켜고_끄기.py)
+1. [BOJ_2491_수열](Algorithm/Baekjoon/BOJ/BOJ_2491_수열.py)
+1. [BOJ_2578_빙고](Algorithm/Baekjoon/BOJ/BOJ_2578_빙고.py)
+1. [BOJ_2304_창고_다각형](Algorithm/Baekjoon/BOJ/BOJ_2304_창고_다각형.py)
 
 #### 1단계 - 입출력과 사칙연산
 
