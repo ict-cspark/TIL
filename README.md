@@ -40,6 +40,12 @@
 1. [2022/02/23](Learn/Algorithm/live_220223.md)
 1. [2022/02/25](Learn/Algorithm/live_220225.md)
 
+## 📡Django
+
+1. [2022/03/02](Learn/Django/live_220302.md)
+2. [2022/03/03](Learn/Django/live_220303.md)
+3. [2022/03/04 (PJT)](Learn/Django/live_220304.md)
+
 ---
 
 ## ⏳ Algorithm Solving
