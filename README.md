@@ -172,6 +172,7 @@
 1. [BOJ_2491_수열](Algorithm/Baekjoon/BOJ/BOJ_2491_수열.py)
 1. [BOJ_2578_빙고](Algorithm/Baekjoon/BOJ/BOJ_2578_빙고.py)
 1. [BOJ_2304_창고_다각형](Algorithm/Baekjoon/BOJ/BOJ_2304_창고_다각형.py)
+1. 
 
 #### 1단계 - 입출력과 사칙연산
 
