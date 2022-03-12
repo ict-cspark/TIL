@@ -6,10 +6,14 @@
 
 1. [CLI 사용법](Learn/Startcamp/CLI.md)
 2. [마크다운 사용법](Learn/Startcamp/markdown.md)
-3. [Git 사용법(1)](Learn/Startcamp/git.md)
-3. [Git 사용법(2)](Learn/Startcamp/git2.md)
 
 ---
+
+## 💾 Git
+
+1. [2022/01/13](Learn/Git/live_220113.md)
+2. [2022/01/14](Learn/Git/live_220114.md)
+3. [2022/03/11](Learn/Git/live_220311.md)
 
 ## 💻 Python
 
@@ -175,6 +179,7 @@
 1. [BOJ_1149_RGB거리](Algorithm/Baekjoon/BOJ/BOJ_1149_RGB거리.py)
 1. [BOJ_10451_순열사이클](Algorithm/Baekjoon/BOJ/BOJ_10451_순열사이클.py)
 1. [BOJ_15651_N과_M_(3)](Algorithm/Baekjoon/BOJ/BOJ_15651_N과_M_(3).py)
+1. [BOJ_1260_DFS와_BFS](Algorithm/Baekjoon/BOJ/BOJ_1260_DFS와_BFS.py)
 
 #### 1단계 - 입출력과 사칙연산
 
