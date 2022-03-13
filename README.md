@@ -15,6 +15,8 @@
 2. [2022/01/14](Learn/Git/live_220114.md)
 3. [2022/03/11](Learn/Git/live_220311.md)
 
+---
+
 ## 💻 Python
 
 1. [2022/01/17](Learn/Python/live_220117.md)
@@ -44,6 +46,8 @@
 1. [2022/02/23](Learn/Algorithm/live_220223.md)
 1. [2022/02/25](Learn/Algorithm/live_220225.md)
 
+---
+
 ## 📡Django
 
 1. [2022/03/02](Learn/Django/live_220302.md)
@@ -59,6 +63,8 @@
 #### Python 기초 100제
 
 + [Python 기초 100제](Algorithm/CodeUp/codeup_basic100.py)
+
+---
 
 ## SWExpertAcademy
 
@@ -164,6 +170,8 @@
 
 1. [5105_미로의거리_DFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_DFS.py)
 2. [5105_미로의거리_BFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_BFS.py)
+
+---
 
 ## BaekJoon Online Judge
 
@@ -273,6 +281,8 @@
 1. [09_Math02_4153_직각삼각형](Algorithm/Baekjoon/Step9/09_Math02_4153.py)
 1. [09_Math02_3053_택시_기하학](Algorithm/Baekjoon/Step9/09_Math02_3053.py)
 
+---
+
 ## Programmers
 
 #### Level 1
@@ -337,15 +347,16 @@
 
 1. [N개의_최소공배수](Algorithm/Programmers/Level2/level2_N개의_최소공배수.py)
 2. [JadenCase_문자열_만들기](Algorithm/Programmers/Level2/level2_JadenCase_문자열_만들기.py)
-2. [행렬의_곱셈](Algorithm/Programmers/Level2/level2_행렬의_곱셈.py)
-2. [피보나치_수](Algorithm/Programmers/Level2/level2_피보나치_수.py)
-2. [최솟값_만들기](Algorithm/Programmers/Level2/level2_최솟값_만들기.py)
-2. [최댓값과_최솟값](Algorithm/Programmers/Level2/level2_최댓값과_최솟값.py)
-2. [숫자의_표현](Algorithm/Programmers/Level2/level2_숫자의_표현.py)
-2. [땅따먹기](Algorithm/Programmers/Level2/level2_땅따먹기.py)
-2. [다음_큰_숫자](Algorithm/Programmers/Level2/level2_다음_큰_숫자.py)
-2. [올바른_괄호](Algorithm/Programmers/Level2/level2_올바른_괄호.py)
-2. [가장_큰_정사각형_찾기](Algorithm/Programmers/Level2/level2_가장_큰_정사각형_찾기.py)
-2. [가장_큰_수](Algorithm/Programmers/Level2/level2_가장_큰_수.py)
-2. 
+3. [행렬의_곱셈](Algorithm/Programmers/Level2/level2_행렬의_곱셈.py)
+4. [피보나치_수](Algorithm/Programmers/Level2/level2_피보나치_수.py)
+5. [최솟값_만들기](Algorithm/Programmers/Level2/level2_최솟값_만들기.py)
+6. [최댓값과_최솟값](Algorithm/Programmers/Level2/level2_최댓값과_최솟값.py)
+7. [숫자의_표현](Algorithm/Programmers/Level2/level2_숫자의_표현.py)
+8. [땅따먹기](Algorithm/Programmers/Level2/level2_땅따먹기.py)
+9. [다음_큰_숫자](Algorithm/Programmers/Level2/level2_다음_큰_숫자.py)
+10. [올바른_괄호](Algorithm/Programmers/Level2/level2_올바른_괄호.py)
+11. [가장_큰_정사각형_찾기](Algorithm/Programmers/Level2/level2_가장_큰_정사각형_찾기.py)
+12. [가장_큰_수](Algorithm/Programmers/Level2/level2_가장_큰_수.py)
+
+---
 
