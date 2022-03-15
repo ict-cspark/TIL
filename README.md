@@ -103,6 +103,7 @@
 1. [1225_암호생성기](Algorithm/SWExpertAcademy/Problem_Solving/1225_암호생성기.py)
 1. [6019_기차_사이의_파리](Algorithm/SWExpertAcademy/Problem_Solving/6019_기차_사이의_파리.py)
 1. [13994_새로운_버스_노선](Algorithm/SWExpertAcademy/Problem_Solving/13994_새로운_버스_노선.py)
+1. [1226_미로1](Algorithm/SWExpertAcademy/Problem_Solving/1226_미로1.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -170,6 +171,7 @@
 
 1. [5105_미로의거리_DFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_DFS.py)
 2. [5105_미로의거리_BFS](Algorithm/SWExpertAcademy/Python_SW_Queue/5105_미로의거리_BFS.py)
+2. [5097_회전](Algorithm/SWExpertAcademy/Python_SW_Queue/5097_회전.py)
 
 ---
 
@@ -188,6 +190,7 @@
 1. [BOJ_10451_순열사이클](Algorithm/Baekjoon/BOJ/BOJ_10451_순열사이클.py)
 1. [BOJ_15651_N과_M_(3)](Algorithm/Baekjoon/BOJ/BOJ_15651_N과_M_(3).py)
 1. [BOJ_1260_DFS와_BFS](Algorithm/Baekjoon/BOJ/BOJ_1260_DFS와_BFS.py)
+1. [BOJ_7576_토마토](Algorithm/Baekjoon/BOJ/BOJ_7576_토마토.py)
 
 #### 1단계 - 입출력과 사칙연산
 
@@ -212,6 +215,8 @@
 3. [02_if_2753_윤년](Algorithm/Baekjoon/Step2/02_if_2753.py)
 4. [02_if_14681_사분면 고르기](Algorithm/Baekjoon/Step2/02_if_14681.py)
 5. [02_if_2884_알람 시계](Algorithm/Baekjoon/Step2/02_if_2884.py)
+5. [02_if_2480](Algorithm/Baekjoon/Step2/02_if_2480.py)
+5. [02_if_2525](Algorithm/Baekjoon/Step2/02_if_2525.py)
 
 #### 3단계 - For문
 
