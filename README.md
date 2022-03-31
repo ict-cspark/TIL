@@ -50,6 +50,8 @@
 1. [2022/03/21](Learn/Algorithm/live_220321.md)
 1. [2022/03/23](Learn/Algorithm/live_220323.md)
 1. [2022/03/25](Learn/Algorithm/live_220325.md)
+1. [2022/03/28](Learn/Algorithm/live_220328.md)
+1. [2022/03/30](Learn/Algorithm/live_220330.md)
 
 ---
 
@@ -118,6 +120,15 @@
 1. [1861_정사각형_방](Algorithm/SWExpertAcademy/Problem_Solving/1861_정사각형_방.py)
 1. [1953_탈주범_검거](Algorithm/SWExpertAcademy/Problem_Solving/1953_탈주범_검거.py)
 1. [1240_단순2진암호코드](Algorithm/SWExpertAcademy/Problem_Solving/1240_단순2진암호코드.py)
+1. [1242_암호코드스캔](Algorithm/SWExpertAcademy/Problem_Solving/1242_암호코드스캔.py)
+1. [1952_수영장](Algorithm/SWExpertAcademy/Problem_Solving/1952_수영장.py)
+1. [2105_디저트_카페](Algorithm/SWExpertAcademy/Problem_Solving/2105_디저트_카페.py)
+1. [2117_홈_방범_서비스](Algorithm/SWExpertAcademy/Problem_Solving/2117_홈_방범_서비스.py)
+1. [2382_미생물_격리](Algorithm/SWExpertAcademy/Problem_Solving/2382_미생물_격리.py)
+1. [2819_격자판의_숫자_이어_붙이기](Algorithm/SWExpertAcademy/Problem_Solving/2819_격자판의_숫자_이어_붙이기.py)
+1. [4366_정식이의_은행업무](Algorithm/SWExpertAcademy/Problem_Solving/4366_정식이의_은행업무.py)
+1. [4615_재미있는_오셀로_게임](Algorithm/SWExpertAcademy/Problem_Solving/4615_재미있는_오셀로_게임.py)
+1. [1865_동철이의일분배](Algorithm/SWExpertAcademy/Problem_Solving/1865_동철이의일분배.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -196,6 +207,33 @@
 3. [5177_이진힙](Algorithm/SWExpertAcademy/Python_SW_Tree/5177_이진힙.py)
 4. [5178_노드의_합](Algorithm/SWExpertAcademy/Python_SW_Tree/5178_노드의_합.py)
 
+#### 파이썬 SW문제해결 응용 시작하기
+
+1. [5185_이진수](Algorithm/SWExpertAcademy/Python_SW_Advanced_Start/5185_이진수.py)
+2. [5186_이진수2](Algorithm/SWExpertAcademy/Python_SW_Advanced_Start/5186_이진수2.py)
+
+#### 파이썬 SW문제해결 응용 완전 검색
+
+1. [5188_최소합](Algorithm/SWExpertAcademy/Python_SW_Advanced_Exhaustive_Search/5188_최소합.py)
+2. [5189_전자카트](Algorithm/SWExpertAcademy/Python_SW_Advanced_Exhaustive_Search/5189_전자카트.py)
+
+#### 파이썬 SW문제해결 응용 탐욕 알고리즘
+
+1. [5201_컨테이너운반](Algorithm/SWExpertAcademy/Python_SW_Advanced_Greedy/5201_컨테이너운반.py)
+2. [5202_화물도크](Algorithm/SWExpertAcademy/Python_SW_Advanced_Greedy/5202_화물도크.py)
+3. [5203_베이비진게임](Algorithm/SWExpertAcademy/Python_SW_Advanced_Greedy/5203_베이비진게임.py)
+
+#### 파이썬 SW문제해결 응용 분할 정복
+
+1. [5204_병합정렬](Algorithm/SWExpertAcademy/Python_SW_Advanced_Divide/5204_병합정렬.py)
+2. [5205_퀵정렬](Algorithm/SWExpertAcademy/Python_SW_Advanced_Divide/5205_퀵정렬.py)
+3. [5207_이진탐색](Algorithm/SWExpertAcademy/Python_SW_Advanced_Divide/5207_이진탐색.py)
+
+#### 파이썬 SW문제해결 응용 분할 백트래킹
+
+1. [5208_전기버스2](Algorithm/SWExpertAcademy/Python_SW_Advanced_Backtracking/5208_전기버스2.py)
+2. [5209_최소생산비용](Algorithm/SWExpertAcademy/Python_SW_Advanced_Backtracking/5209_최소생산비용.py)
+
 ---
 
 ## BaekJoon Online Judge
@@ -219,6 +257,9 @@
 1. [BOJ_1463_1로_만들기](Algorithm/Baekjoon/BOJ/BOJ_1463_1로_만들기.py)
 1. [BOJ_11725_트리의_부모_찾기](Algorithm/Baekjoon/BOJ/BOJ_11725_트리의_부모_찾기.py)
 1. [BOJ_1966_프린터_큐](Algorithm/Baekjoon/BOJ/BOJ_1966_프린터_큐.py)
+1. [BOJ_1713_후보_추천하기](Algorithm/Baekjoon/BOJ/BOJ_1713_후보_추천하기.py)
+1. [BOJ_1744_수_묶기](Algorithm/Baekjoon/BOJ/BOJ_1744_수_묶기.py)
+1. [BOJ_14225_부분수열의_합](Algorithm/Baekjoon/BOJ/BOJ_14225_부분수열의_합.py)
 
 #### 1단계 - 입출력과 사칙연산
 
@@ -391,6 +432,7 @@
 11. [가장_큰_정사각형_찾기](Algorithm/Programmers/Level2/level2_가장_큰_정사각형_찾기.py)
 12. [가장_큰_수](Algorithm/Programmers/Level2/level2_가장_큰_수.py)
 12. [캐시](Algorithm/Programmers/Level2/level2_캐시.py)
+12. [프렌즈4블록](Algorithm/Programmers/Level2/level2_프렌즈4블록.py)
 
 ---
 
