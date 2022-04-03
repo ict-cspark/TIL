@@ -52,6 +52,7 @@
 1. [2022/03/25](Learn/Algorithm/live_220325.md)
 1. [2022/03/28](Learn/Algorithm/live_220328.md)
 1. [2022/03/30](Learn/Algorithm/live_220330.md)
+1. [2022/04/01](Learn/Algorithm/live_220401.md)
 
 ---
 
