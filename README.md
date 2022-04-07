@@ -53,6 +53,7 @@
 1. [2022/03/28](Learn/Algorithm/live_220328.md)
 1. [2022/03/30](Learn/Algorithm/live_220330.md)
 1. [2022/04/01](Learn/Algorithm/live_220401.md)
+1. [2022/04/04](Learn/Algorithm/live_220404.md)
 
 ---
 
@@ -64,6 +65,7 @@
 3. [2022/03/08](Learn/Django/live_220308.md)
 3. [2022/03/10](Learn/Django/live_220310.md)
 3. [2022/03/11 (PJT)](Learn/Django/live_220311.md)
+3. [2022/04/06](Learn/Django/live_220406.md)
 
 ---
 
@@ -130,6 +132,13 @@
 1. [4366_정식이의_은행업무](Algorithm/SWExpertAcademy/Problem_Solving/4366_정식이의_은행업무.py)
 1. [4615_재미있는_오셀로_게임](Algorithm/SWExpertAcademy/Problem_Solving/4615_재미있는_오셀로_게임.py)
 1. [1865_동철이의일분배](Algorithm/SWExpertAcademy/Problem_Solving/1865_동철이의일분배.py)
+1. [1249_보급로](Algorithm/SWExpertAcademy/Problem_Solving/1249_보급로.py)
+1. [1486_장훈이의높은선반](Algorithm/SWExpertAcademy/Problem_Solving/1486_장훈이의높은선반.py)
+1. [2115_벌꿀채취](Algorithm/SWExpertAcademy/Problem_Solving/2115_벌꿀채취.py)
+1. [2806_NQueen](Algorithm/SWExpertAcademy/Problem_Solving/2806_NQueen.py)
+1. [4012_요리사](Algorithm/SWExpertAcademy/Problem_Solving/4012_요리사.py)
+1. [5648_원자소멸시뮬레이션](Algorithm/SWExpertAcademy/Problem_Solving/5648_원자소멸시뮬레이션.py)
+1. [5688_세제곱근을 찾아라](Algorithm/SWExpertAcademy/Problem_Solving/5688_세제곱근을 찾아라.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
@@ -230,10 +239,21 @@
 2. [5205_퀵정렬](Algorithm/SWExpertAcademy/Python_SW_Advanced_Divide/5205_퀵정렬.py)
 3. [5207_이진탐색](Algorithm/SWExpertAcademy/Python_SW_Advanced_Divide/5207_이진탐색.py)
 
-#### 파이썬 SW문제해결 응용 분할 백트래킹
+#### 파이썬 SW문제해결 응용 백트래킹
 
 1. [5208_전기버스2](Algorithm/SWExpertAcademy/Python_SW_Advanced_Backtracking/5208_전기버스2.py)
 2. [5209_최소생산비용](Algorithm/SWExpertAcademy/Python_SW_Advanced_Backtracking/5209_최소생산비용.py)
+
+#### 파이썬 SW문제해결 응용 분할 그래프의 기본과 탐색
+
+1. [5247_연산](Algorithm/SWExpertAcademy/Python_SW_Advanced_Graph/5247_연산.py)
+2. [5248_그룹나누기](Algorithm/SWExpertAcademy/Python_SW_Advanced_Graph/5248_그룹나누기.py)
+
+#### 파이썬 SW문제해결 응용 그래프의 최소 비용 문제
+
+1. [5249_최소신장트리](Algorithm/SWExpertAcademy/Python_SW_Advanced_MST/5249_최소신장트리.py)
+2. [5250_최소비용](Algorithm/SWExpertAcademy/Python_SW_Advanced_MST/5250_최소비용.py)
+3. [5251_최소이동거리](Algorithm/SWExpertAcademy/Python_SW_Advanced_MST/5251_최소이동거리.py)
 
 ---
 
