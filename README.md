@@ -66,7 +66,7 @@
 3. [2022/03/10](Learn/Django/live_220310.md)
 3. [2022/03/11 (PJT)](Learn/Django/live_220311.md)
 3. [2022/04/06](Learn/Django/live_220406.md)
-3. 
+3. [2022/04/08 (PJT)](Learn/Django/live_220408.md)
 
 ---
 
@@ -282,6 +282,8 @@
 1. [BOJ_1713_후보_추천하기](Algorithm/Baekjoon/BOJ/BOJ_1713_후보_추천하기.py)
 1. [BOJ_1744_수_묶기](Algorithm/Baekjoon/BOJ/BOJ_1744_수_묶기.py)
 1. [BOJ_14225_부분수열의_합](Algorithm/Baekjoon/BOJ/BOJ_14225_부분수열의_합.py)
+1. [BOJ_16234_인구_이동](Algorithm/Baekjoon/BOJ/BOJ_16234_인구_이동.py)
+1. [BOJ_1697_숨바꼭질](Algorithm/Baekjoon/BOJ/BOJ_1697_숨바꼭질.py)
 
 #### 1단계 - 입출력과 사칙연산
 
