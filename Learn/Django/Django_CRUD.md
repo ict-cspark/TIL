@@ -1,4 +1,4 @@
-# 준비
+# 사전준비
 
 ### 1. 가상환경 생성
 
@@ -12,6 +12,7 @@ $ source venv/Scripts/Activate		# 가상환경 활성화
 ```bash
 $ pip install django==3.2			# 장고 3.2버전 설치
 $ pip freeze > requirements.txt		# requirements.txt에 설치목록 저장
+$ pip freeze -r requirements.txt 	# requirements.txt에 저장된 라이브러리 설치
 ```
 
 ### 3. 프로젝트 및 APP 설치
@@ -60,26 +61,60 @@ urlpatterns = [
 ]
 ```
 
+### 5. Custom User (User 사용시)
+
+```python
+# accounts/models.py
+
+from django.contrib.auth.models import AbstractUser
+
+
+class User(AbstractUser):
+    pass
+
+
+# settings.py
+
+AUTH_USER_MODEL = 'accounts.User'
+
+
+# accounts/admin.py
+
+from django.contrib.auth.admin import UserAdmin
+from .models import User
+
+admin.site.register(User, UserAdmin)
+
+
+# accounts.forms.py
+
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth import get_user_model
+
+ 
+class CustomUserCreationForm(UserCreationForm):
+
+    class Meta(UserCreationForm.Meta):
+        model = get_user_model()
+        fields = UserCreationForm.Meta.fields + ('email',)
+        
+
+class CustomUserChangeForm(UserChangeForm):
+
+    class Meta:
+        model = get_user_model()
+        fields = ('email', 'first_name', 'last_name',)
+```
+
+---
+
 ---
 
 # CRUD
 
-### articles/admin.py
-
-
-
-```python
-from django.contrib import admin
-from .models import Article
-
-class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('pk', 'title', 'content', 'created_at', 'updated_at',)
-
-
-admin.site.register(Article, ArticleAdmin)
-```
-
 ### articles/models.py
+
+
 
 ```python
 from django.db import models
@@ -92,9 +127,31 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 ```
 
-```bas
+```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
+```
+
+----
+
+### articles/admin.py
+
+
+
+```python
+from django.contrib import admin
+from .models import Article
+
+
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ('pk', 'title', 'content', 'created_at', 'updated_at',)
+
+
+admin.site.register(Article, ArticleAdmin)
+```
+
+```bash
+$ python manange.py createsuperuser
 ```
 
 ---
@@ -306,7 +363,7 @@ def delete(request, article_pk):
     <h1>UPDATE</h1>
   {% endif %}
   <hr>
-  <form action="{% url 'articles:create' %}" method="POST">
+  <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button>Submit</button>
@@ -314,7 +371,7 @@ def delete(request, article_pk):
       <a href="{% url 'articles:detail' artilce.pk %}">Cancel</a>
     {% endif %}
   </form>
-  <a href="{% url 'articles:index' %}">back</a>
+  <a href="{% url 'articles:index' %}">BACK</a>
 {% endblock content %}
 ```
 
@@ -344,9 +401,12 @@ urls.py 등록 및 urls.py 생성 후 app_name = 'accounts'
 ## 회원가입
 
 > 1. urs.py 등록
+>
 > 2. 회원가입 버튼 생성 (is_authenticated 이용하여 비로그인 상태일 경우에만)
+>
 > 3. view 함수 작성 (UserCreationForm과 require_http_method, auth_login을 import 후 
-> 4. if - else 작성, 필수인자 없음, is_authenticated 이용하여 로그인 상태일 경우 index로 redirect )
+>
+>    if - else 작성, 필수인자 없음, is_authenticated 이용하여 로그인 상태일 경우 index로 redirect )
 >
 > 4. signup.html 생성 (기본 form 양식)
 
@@ -540,8 +600,8 @@ def login(request):
 ```html
 <!-- base.html -->
 
-<a href="{% url 'accounts:login' %}">Login</a>
 <h3>Hello, {{ user }}</h3>
+<a href="{% url 'accounts:login' %}">Login</a>
 ```
 
 ### templates/base.html + is_authenticated (인증 확인)
@@ -847,3 +907,9 @@ def delete(request):
     ...
 {% endif %}
 ```
+
+---
+
+---
+
+# CRUD + ACCOUNTS + COMMENTS + USERS
