@@ -7,6 +7,8 @@ $ python -m venv venv				# 가상환경 생성
 $ source venv/Scripts/Activate		# 가상환경 활성화
 ```
 
+
+
 ### 2. 장고 설치
 
 ```bash
@@ -15,12 +17,16 @@ $ pip freeze > requirements.txt		# requirements.txt에 설치목록 저장
 $ pip freeze -r requirements.txt 	# requirements.txt에 저장된 라이브러리 설치
 ```
 
+
+
 ### 3. 프로젝트 및 APP 설치
 
 ``` bash
 $ django-admin startproject config .	# 프로젝트 최상위 폴더에 생성
 $ python manage.py startapp article		# app 생성
 ```
+
+
 
 ### 4. 기본설정
 
@@ -60,6 +66,8 @@ urlpatterns = [
     ...
 ]
 ```
+
+
 
 ### 5. Custom User (User 사용시)
 
@@ -106,15 +114,36 @@ class CustomUserChangeForm(UserChangeForm):
         fields = ('email', 'first_name', 'last_name',)
 ```
 
----
+
 
 ---
 
 # CRUD
 
+### articles/urls.py
+
+```python
+# urls.py
+
+app_name = 'articles'
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('create/', views.create, name='create'),
+    path('<int:pk>/', views.detail, name='detail'),
+    path('<int:pk>/delete/', views.delete, name='delete'),
+    path('<int:pk>/update/', views.update, name='update'),
+]
+
+
+# + comment_create, comment_delete
+
+    path('<int:pk>/comments/', views.comment_create, name='comment_create'),
+    path('<int:article_pk>/comments/<int:comment_pk>/delete/', views.comment_delete, name='comment_delete'),
+```
+
+
+
 ### articles/models.py
-
-
 
 ```python
 from django.db import models
@@ -125,6 +154,26 @@ class Article(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return self.title
+    
+
+# Comment
+class Comment(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    content = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+   
+
+# user
+from django.conf import settings
+
+
+class Article(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    ...
 ```
 
 ```bash
@@ -132,33 +181,35 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-----
+
 
 ### articles/admin.py
-
-
 
 ```python
 from django.contrib import admin
 from .models import Article
 
 
-class ArticleAdmin(admin.ModelAdmin):
+class ArticleAdmin(admin.ModelAdmin):	# 선택옵션
     list_display = ('pk', 'title', 'content', 'created_at', 'updated_at',)
 
-
+    
 admin.site.register(Article, ArticleAdmin)
+
+
+# Comment
+from .models import Comment
+
+admin.site.register(Comment)
 ```
 
 ```bash
 $ python manange.py createsuperuser
 ```
 
----
+
 
 ### articles/forms.py
-
-
 
 ```python
 # forms.py
@@ -172,6 +223,25 @@ class ArticleForm(forms.ModelForm):
     class Meta:
         model = Article
         fields = '__all__'
+        
+        
+# CommentForm
+from .models import Comment
+
+
+class CommentForm(forms.ModelForm):
+
+    class Meta:
+        model = Comment
+        fields = ('content',)
+        
+        
+# ArticleForm + user
+class ArticleForm(forms.ModelForm):
+
+    class Meta:
+        model = Article
+        fields = ('title', 'content',)
 ```
 
 ```python
@@ -190,9 +260,8 @@ CHOICE = [
     ('A', 'A'),
     ('B', 'B'),
 ]
-genre = forms.ChoiceField(
-    choices = CHOICE,
-    widget = forms.Select(),
+genre = forms.CharField(
+    widget = forms.Select(choices = CHOICE,),
 )
 
 
@@ -216,19 +285,16 @@ poster_url = forms.CharField(
 )
 ```
 
----
+### 
 
-### articles/views.py
-
-
+### articles/views.py - index
 
 ```python
 # views.py
 
-from django.views.decorators.http import require_http_methods, require_POST, require_safe
-from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.http import require_safe
+from django.shortcuts import render
 from .models import Article
-from .forms import ArticleForm
 
 
 @require_safe
@@ -239,6 +305,18 @@ def index(request):
         'articles': article,
     }
     return render(request, 'articles/index.html', context)
+```
+
+
+
+### articles/views.py - create
+
+```python
+# views.py
+
+from django.views.decorators.http import require_http_methods
+from django.shortcuts import render, redirect
+from .forms import ArticleForm
 
 
 @require_http_methods(['GET', 'POST'])
@@ -257,6 +335,36 @@ def create(request):
     return render(request, 'articles/form.html', context)
 
 
+# create + user
+from django.contrib.auth.decorators import login_required
+
+
+@login_required
+@require_http_methods(['GET', 'POST'])
+def create(request):
+    if request.method == 'POST':
+        form = ArticleForm(request.POST)
+        if form.is_valid():
+            article = form.save(commit=False)
+            article.user = request.user
+            article.save()
+            return redirect('articles:detail', article.pk)
+```
+
+
+
+### articles/views.py - detail
+
+
+
+```python
+# views.py
+
+from django.views.decorators.http import require_safe
+from django.shortcuts import render, get_object_or_404
+from .models import Article
+
+
 @require_safe
 def detail(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
@@ -265,6 +373,45 @@ def detail(request, article_pk):
         'article': article,
     }
     return render(request, 'article/detail.html', context)
+
+
+# detail + CommentForm
+from .forms import CommentForm
+
+@require_safe
+def detail(request, pk):
+    article = get_object_or_404(Article, pk=pk)
+    comment_form = CommentForm()
+    
+    context = {
+        'article': article,
+        'comment_form': comment_form,
+    }
+    return render(request, 'articles/detail.html', context)
+
+
+# detail + CommentFrom + comments
+	comment_form = CommentForm()
+    comments = article.comment_set.all()
+    
+    context = {
+        'article': article,
+        'comment_form': comment_form,
+        'comments': comments,
+    }
+```
+
+
+
+### articles/views.py - update
+
+```python
+# views.py
+
+from django.views.decorators.http import require_http_methods
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Article
+from .forms import ArticleForm
 
 
 @require_http_methods(['GET', 'POST'])
@@ -285,18 +432,127 @@ def update(request, article_pk):
     return render(request, 'articles/form.html', context)
 
 
+# update + user
+from django.contrib.auth.decorators import login_required
+
+
+@login_required
+@require_http_methods(['GET', 'POST'])
+def update(request, pk):
+    article = get_object_or_404(Article, pk=pk)
+    if request.user == article.user:
+        if request.method == 'POST':
+            form = ArticleForm(request.POST, instance=article)
+            if form.is_valid():
+                article = form.save()
+                return redirect('articles:detail', article.pk)
+        else:
+            form = ArticleForm(instance=article)
+    else:
+        return redirect('articles:index')
+    ...
+    return render(request, 'articles/update.html', context)
+```
+
+
+
+### articles/views.py - delete
+
+```python
+# views.py
+
+from django.views.decorators.http import require_POST
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Article
+
+
 @require_POST
 def delete(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
     article.delete()
     return redirect('articles:index')
+
+
+# delete + user
+@require_POST
+def delete(request, pk):
+    article = get_object_or_404(Article, pk=pk)
+    if request.user.is_authenticated:
+        if request.user == article.user:
+            article.delete()
+    return redirect('articles:index')
 ```
 
----
-
-### articles/templates/articles/index.html
 
 
+### articles/views.py - comment_create
+
+```python
+# articles/views.py
+
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Article
+from .forms import CommentForm
+from django.views.decorators.http import require_POST
+
+@require_POST
+def comment_create(request, pk):
+    if request.user.is_authenticated:
+        article = get_object_or_404(Article, pk=pk)
+        comment_form = CommentForm(request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.article = article
+            comment.save()
+        return redirect('articles:detail', article.pk)
+    return redirect('accounts:login')
+
+
+# comment_create + user
+@require_POST
+def comment_create(request, pk):
+    if request.user.is_authenticated:
+        ...
+        if comment_form.is_valid():
+           comment = comment_form.save(commit=False)
+            comment.article = article
+            comment.user = request.user
+            comment.save()
+        return redirect('articles:detail', article.pk)
+    return redirect('accounts:login')
+```
+
+
+
+### articles/views.py - comment_delete
+
+```python
+# articles/views.py
+
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Comment
+from django.views.decorators.http import require_POST
+
+@require_POST
+def comment_delete(request, article_pk ,comment_pk):
+    comment = get_object_or_404(Comment, pk=comment_pk)
+    comment.delete()
+    return redirect('articles:detail', article_pk)
+
+
+# comment_user + user
+@require_POST
+def comment_delete(request, article_pk ,comment_pk):
+    if request.user.is_authenticated:
+        comment = get_object_or_404(Comment, pk=comment_pk)
+        if request.user == comment.user:
+            comment.delete()
+    return redirect('articles:detail', article_pk)
+```
+
+
+
+### articles/templates/articles/index.html + user
 
 ```html
 <!--index.html-->
@@ -308,18 +564,17 @@ def delete(request, article_pk):
   <a href="{% url 'articles:create' %}">CREATE</a>
   <hr>
   {% for article in articles %}
-  <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
-  <p>{{ article.content }}</p>
-  <hr>
+    <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+    <p>작성자: {{ article.user }}</p>
+    <p>글 내용: {{ article.content }}</p>
+    <hr>
   {% endfor %}
 {% endblock content %}
 ```
 
----
+
 
 ### articles/templates/articles/detail.html
-
-
 
 ```html
 <!--detail.html-->
@@ -343,13 +598,104 @@ def delete(request, article_pk):
   <a href="{% url 'articles:index' %}">back</a>
 {% endblock content %}
 
+
+<!--detail.html + CommentForm + comments_create-->
+...
+  <hr>
+  {% if request.user.is_authenticated %}
+    <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+      {% csrf_token %}
+      {{ comment_form }}
+        <button>Submit</button>
+    </form>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">[댓글을 작성하려면 로그인하세요.]</a>
+  {% endif %}
+{% endblock content %}
+
+
+<!--detail.html + comment_delete + user-->
+  <hr>
+  {% if request.user == article.user %}
+    <a href="{% url 'articles:update' article.pk %}">수정</a>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+      {% csrf_token %}
+      <button>삭제</button>
+    </form>
+  {% endif %}
+  <a href="{% url 'articles:index' %}">back</a>
+  <hr>
+  <h4>댓글 목록</h4>
+  <ul>
+    {% for comment in comments %}
+      <li>
+        {{ comment.user }} - {{ comment.content }}
+        {% if request.user == comment.user %}
+          <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="POST">
+            {% csrf_token %}
+            <button>삭제</button>
+          </form>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 ```
 
----
+### articles/templates/articles/detail.html + Comment + user
+
+```html
+<!--detail.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+  <h3>{{ article.pk }}번째 글</h3>
+  <hr>
+  <p>제목 : {{ article.title }}</p>
+  <p>내용 : {{ article.content }}</p>
+  <p>작성 시각 : {{ article.created_at }}</p>
+  <p>수정 시각 : {{ article.updated_at }}</p>
+    <hr>
+  {% if request.user == article.user %}
+    <a href="{% url 'articles:update' article.pk %}">수정</a>
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+      {% csrf_token %}
+      <button>삭제</button>
+    </form>
+  {% endif %}
+  <a href="{% url 'articles:index' %}">back</a>
+  <hr>
+  <h4>댓글 목록</h4>
+  <ul>
+    {% for comment in comments %}
+      <li>
+        {{ comment.user }} - {{ comment.content }}
+        {% if request.user == comment.user %}
+          <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="POST">
+            {% csrf_token %}
+            <button>삭제</button>
+          </form>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <hr>
+  {% if request.user.is_authenticated %}
+    <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+      {% csrf_token %}
+      {{ comment_form }}
+        <button>Submit</button>
+    </form>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">[댓글을 작성하려면 로그인하세요.]</a>
+  {% endif %}
+{% endblock content %}
+```
+
+
 
 ### articles/templates/articles/form.html
-
-
 
 ```html
 <!--form.html-->
@@ -357,19 +703,23 @@ def delete(request, article_pk):
 {% extends 'base.html' %}
 
 {% block content %}
+
   {% if request.resolver_match.url_name == 'create' %}
     <h1>CREATE</h1>
   {% else %}
     <h1>UPDATE</h1>
   {% endif %}
+
   <hr>
   <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
     <button>Submit</button>
+      
     {% if request.resolver_match.url_name == 'update' %}
       <a href="{% url 'articles:detail' artilce.pk %}">Cancel</a>
     {% endif %}
+      
   </form>
   <a href="{% url 'articles:index' %}">BACK</a>
 {% endblock content %}
@@ -383,7 +733,7 @@ def delete(request, article_pk):
 4. {{ form.as_p }} -> {% bootstrap_form form %}
 ```
 
----
+
 
 ---
 
@@ -417,6 +767,8 @@ urls.py 등록 및 urls.py 생성 후 app_name = 'accounts'
 
 path('signup/', views.signup, name='signup'),
 ```
+
+
 
 ### accounts/views.py
 
@@ -474,6 +826,40 @@ def signup(request):
 
 ```
 
+### accounts/views.py + is_authenticated (인증 확인) 
+
+### + login as auth_login (자동 로그인) + CustomuserCreationsForm (Form 수정)
+
+```python
+# views.py
+
+from django.shortcuts import render, redirect
+from django.contrib.auth import login as auth_login
+from django.views.decorators.http import require_http_methods
+from .forms import CustomUserCreationForm
+
+@require_http_methods(['GET', 'POST'])
+def signup(request):
+    if request.user.is_authenticated:
+        return redirect('articles:index')
+
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            auth_login(request, user)
+            return redirect('articles:index')
+    else:
+        form = CustomUserCreationForm()
+    context = {
+        'form': form,
+    }
+    return render(request, 'accounts/signup.html', context)
+
+```
+
+
+
 ### accounts/templates/accounts/signup.html
 
 ```html
@@ -492,6 +878,8 @@ def signup(request):
   <a href="{% url 'articles:index' %}">back</a>
 {% endblock content %}
 ```
+
+
 
 ### templates/base.html
 
@@ -512,6 +900,8 @@ def signup(request):
     <a href="{% url 'accounts:signup' %}">Signup</a>
 {% endif %}
 ```
+
+
 
 ---
 
@@ -534,6 +924,8 @@ def signup(request):
 
 path('login/', views.login, name='login'),
 ```
+
+
 
 ### accounts/views.py
 
@@ -576,6 +968,8 @@ def login(request):
             return redirect(next_link or 'articles:index')
 ```
 
+
+
 ### accounts/templates/accounts/login.html
 
 ```html
@@ -594,6 +988,8 @@ def login(request):
   <a href="{% url 'articles:index' %}">back</a>
 {% endblock content %}
 ```
+
+
 
 ### templates/base.html
 
@@ -628,6 +1024,10 @@ def login(request):
 <hr>
 ```
 
+
+
+---
+
 ## 로그아웃
 
 > 1. urs.py 등록
@@ -645,6 +1045,8 @@ def login(request):
 
 path('logout/', views.logout, name='logout'),
 ```
+
+
 
 ### accounts/views.py
 
@@ -672,6 +1074,8 @@ def logout(request):
     return redirect('articles:index')
 ```
 
+
+
 ### templates/base.html
 
 ```html
@@ -688,6 +1092,8 @@ def logout(request):
     <a href="{% url 'accounts:signup' %}">Signup</a>
 {% endif %}
 ```
+
+
 
 ---
 
@@ -713,6 +1119,8 @@ def logout(request):
 path('update/', views.update, name='update'),
 ```
 
+
+
 ### accounts/forms.py
 
 ```python
@@ -726,6 +1134,8 @@ class CustomUserChangeForm(UserChangeForm):
         model = get_user_model()
         fields = ('email', 'first_name', 'last_name',)
 ```
+
+
 
 ### accounts/views.py  + CustomUserChangeForm + login_required
 
@@ -753,6 +1163,8 @@ def update(request):
     return render(request, 'accounts/update.html', context)
 ```
 
+
+
 ### accounts/templates/accounts/update.html
 
 ```html
@@ -772,6 +1184,8 @@ def update(request):
 {% endblock content %}
 ```
 
+
+
 ### templates/base.html + is_authenticated 
 
 ```html
@@ -784,6 +1198,8 @@ def update(request):
     ...
 {% endif %}
 ```
+
+
 
 ---
 
@@ -804,6 +1220,8 @@ def update(request):
 
 path('password/', views.change_password, name='change_password'),
 ```
+
+
 
 ### accounts/views.py  + login_required 
 
@@ -835,6 +1253,8 @@ def change_password(request):
     return render(request, 'accounts/change_password.html', context)
 ```
 
+
+
 ### accounts/templates/accounts/change_password.html
 
 ```html
@@ -853,6 +1273,8 @@ def change_password(request):
   <a href="{% url 'articles:index' %}">back</a>
 {% endblock content %}
 ```
+
+
 
 ---
 
@@ -874,6 +1296,8 @@ def change_password(request):
 path('delete/', views.delete, name='delete'),
 ```
 
+
+
 ### accounts/views.py + logout as auth_logout (회원탈퇴 후 로그아웃)
 
 ```python
@@ -890,6 +1314,8 @@ def delete(request):
         auth_logout(request)
     return redirect('articles:index')
 ```
+
+
 
 ### templates/base.html + is_authenticated 
 
@@ -908,8 +1334,6 @@ def delete(request):
 {% endif %}
 ```
 
----
+
 
 ---
-
-# CRUD + ACCOUNTS + COMMENTS + USERS
