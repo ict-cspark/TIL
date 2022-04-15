@@ -14,7 +14,7 @@ $ source venv/Scripts/Activate		# 가상환경 활성화
 ```bash
 $ pip install django==3.2			# 장고 3.2버전 설치
 $ pip freeze > requirements.txt		# requirements.txt에 설치목록 저장
-$ pip freeze -r requirements.txt 	# requirements.txt에 저장된 라이브러리 설치
+$ pip install -r requirements.txt 	# requirements.txt에 저장된 라이브러리 설치
 ```
 
 
@@ -23,7 +23,7 @@ $ pip freeze -r requirements.txt 	# requirements.txt에 저장된 라이브러�
 
 ``` bash
 $ django-admin startproject config .	# 프로젝트 최상위 폴더에 생성
-$ python manage.py startapp article		# app 생성
+$ python manage.py startapp articles		# app 생성
 ```
 
 
@@ -285,7 +285,7 @@ poster_url = forms.CharField(
 )
 ```
 
-### 
+
 
 ### articles/views.py - index
 
@@ -641,10 +641,8 @@ def comment_delete(request, article_pk ,comment_pk):
   </ul>
 ```
 
-### articles/templates/articles/detail.html + Comment + user
-
 ```html
-<!--detail.html-->
+<!--detail.html + Comment + user-->
 
 {% extends 'base.html' %}
 
