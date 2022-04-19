@@ -1335,3 +1335,261 @@ def delete(request):
 
 
 ---
+
+# Like & Profile & Follow
+
+
+
+## Like
+
+### articles/models.py
+
+```python
+from django.db import models
+
+
+# Article
+class Article(models.Model):
+    ...
+    like_user = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_article')
+
+```
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+
+
+### articles/urls.py
+
+```python
+# urls.py
+
+path('<int:article_pk>/like/', views.like, name='like'),
+```
+
+
+
+### articles/views.py
+
+```python
+# views.py
+
+from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.http import require_POST
+
+@require_POST
+def like(request, article_pk):
+    if request.user.is_authenticated:
+        article = get_object_or_404(Article, pk = article_pk)
+        
+        if article.like_user.filter(pk = request.user.pk ).exists():
+            article.like_user.remove(request.user)
+        else:
+            article.like_user.add(request.user)
+        return redirect('articles:index')
+    else:
+        return redirect('accounts:login')
+```
+
+
+
+### articles/templates/articles/index.html + Like
+
+```html
+<!--index.html-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>INDEX</h1>
+  <a href="{% url 'articles:create' %}">CREATE</a>
+  <hr>
+  {% for article in articles %}
+    ...
+    <form action="{% url 'articles:like' article.pk %}" method="POST">
+      {% csrf_token %}
+      {% if request.user in article.like_user.all %}
+        <button>좋아요 취소</button>
+      {% else %}
+        <button>좋아요</button>
+      {% endif %}
+    </form>
+    <hr>
+
+  {% endfor %}
+{% endblock content %}
+```
+
+
+
+## Profile
+
+### accounts/urls.py
+
+```python
+# urls.py
+
+path('<username>/', views.profile, name='profile'),
+```
+
+
+
+### accounts/views.py
+
+```python
+# views.py
+
+from django.shortcuts import render, get_object_or_404
+from django.views.decorators.http import require_safe
+
+
+@require_safe
+def profile(request, username):
+    person = get_object_or_404(get_user_model(), username = username)
+
+    context = {
+        'person': person,
+    }
+    return render(request, 'accounts/profile.html', context)
+```
+
+
+
+### accounts/templates/accounts/profile.html
+
+```html
+<!-- profile.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>Profile</h1>
+  <a href="{% url 'articles:index' %}">HOME</a>
+  <hr>
+  
+  <h3>{{ person.username }}님의 페이지 입니다.</h3>
+  <hr>
+
+  <p>팔로잉 : {{ person.following.count }}, 팔로워 : {{ person.follower.count }}</p>
+  {% if request.user != person %}
+    <form action="{% url 'accounts:follow' person.pk %}" method="POST">
+      {% csrf_token %}
+      {% if request.user in person.follower.all %}
+        <button>언팔로우</button>
+      {% else %}
+        <button>팔로우</button>
+      {% endif %}
+    </form>
+  {% endif %}
+  <hr>
+
+  <p>내가 팔로잉한 유저</p>
+  {% for following in person.following.all %}
+    <p>유저이름 : <a href="{% url 'accounts:profile' following.username %}">{{ following.username }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>나를 팔로워한 유저</p>
+  {% for follower in person.follower.all %}
+    <p>유저이름 : <a href="{% url 'accounts:profile' follower.username %}">{{ follower.username }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>작성한 게시물</p>
+  {% for article in person.article_set.all %}
+    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>, 
+        좋아요 갯수 : {{ article.like_user.count }}</p>
+  {% endfor %}
+  <hr>
+
+  <p>작성한 댓글</p>
+  {% for comment in person.comment_set.all %}
+    <p>내용 : <a href="{% url 'articles:detail' comment.article.pk %}">{{ comment.content }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>내가 좋아요한 게시물</p>
+  {% for article in person.like_article.all %}
+    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></p>
+  {% endfor %}
+  <hr>
+  
+{% endblock content %}
+```
+
+
+
+### templates/base.html
+
+```html
+<!-- base.html -->
+
+<nav class="container">
+    {% if request.user.is_authenticated %}
+      <h2>Hello, <a href="{% url 'accounts:profile' request.user %}">{{ request.user }}</a></h2>
+      ...
+    {% endif %}
+    <hr>
+  </nav>
+```
+
+
+
+## Follow
+
+### accounts/models.py
+
+```python
+from django.db import models
+
+
+# User
+class User(AbstractUser):
+    following = models.ManyToManyField('self', symmetrical=False, related_name='follower')
+
+```
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+
+
+### accounts/urls.py
+
+```python
+# urls.py
+
+path('<int:user_pk>/follow/', views.follow, name='follow'),
+```
+
+
+
+### accounts/views.py
+
+```python
+# views.py
+
+from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.http import require_POST
+from django.contrib.auth import get_user_model
+
+
+@require_POST
+def follow(request, user_pk):
+    if request.user.is_authenticated:
+        person = get_object_or_404(get_user_model(), pk = user_pk)
+        if request.user != person:
+            if person.follower.filter(pk = request.user.pk).exists():
+                person.follower.remove(request.user)
+            else:
+                person.follower.add(request.user)
+        return redirect('accounts:profile', person.username )
+    return redirect('accounts:login')
+```
+
