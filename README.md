@@ -67,6 +67,17 @@
 3. [2022/03/11 (PJT)](Learn/Django/live_220311.md)
 3. [2022/04/06](Learn/Django/live_220406.md)
 3. [2022/04/08 (PJT)](Learn/Django/live_220408.md)
+3. [2022/04/11](Learn/Django/live_220411.md)
+3. [2022/04/20](Learn/Django/live_220420.md)
+
+---
+
+## 📊 DB
+
+1. [2022/03/14](Learn/DB/live_220314.md)
+2. [2022/04/13](Learn/DB/live_220413.md)
+3. [2022/04/15 (PJT)](Learn/DB/live_220415.md)
+4. [2022/04/18](Learn/DB/live_220418.md)
 
 ---
 
@@ -284,6 +295,9 @@
 1. [BOJ_14225_부분수열의_합](Algorithm/Baekjoon/BOJ/BOJ_14225_부분수열의_합.py)
 1. [BOJ_16234_인구_이동](Algorithm/Baekjoon/BOJ/BOJ_16234_인구_이동.py)
 1. [BOJ_1697_숨바꼭질](Algorithm/Baekjoon/BOJ/BOJ_1697_숨바꼭질.py)
+1. [BOJ_2920_음계](Algorithm/Baekjoon/BOJ/BOJ_2920_음계.py)
+1. [BOJ_2475_검증수](Algorithm/Baekjoon/BOJ/BOJ_2475_검증수.py)
+1. [BOJ_1197_최소_스패닝_트리](Algorithm/Baekjoon/BOJ/BOJ_1197_최소_스패닝_트리.py)
 
 #### 1단계 - 입출력과 사칙연산
 
@@ -457,6 +471,8 @@
 12. [가장_큰_수](Algorithm/Programmers/Level2/level2_가장_큰_수.py)
 12. [캐시](Algorithm/Programmers/Level2/level2_캐시.py)
 12. [프렌즈4블록](Algorithm/Programmers/Level2/level2_프렌즈4블록.py)
+12. [n진수_게임](Algorithm/Programmers/Level2/level2_n진수_게임.py)
+12. [튜플](Algorithm/Programmers/Level2/level2_튜플.py)
 
 ---
 
