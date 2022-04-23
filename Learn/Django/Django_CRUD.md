@@ -53,7 +53,7 @@ from django.urls import path, include
 
 urlpatterns = [
     ...
-    path('accounts/', include('accounts.urls')),
+    path('articles/', include('articles.urls')),
 ]
 
 # articles/urls.py
@@ -129,15 +129,15 @@ app_name = 'articles'
 urlpatterns = [
     path('', views.index, name='index'),
     path('create/', views.create, name='create'),
-    path('<int:pk>/', views.detail, name='detail'),
-    path('<int:pk>/delete/', views.delete, name='delete'),
-    path('<int:pk>/update/', views.update, name='update'),
+    path('<int:article_pk>/', views.detail, name='detail'),
+    path('<int:article_pk>/delete/', views.delete, name='delete'),
+    path('<int:article_pk>/update/', views.update, name='update'),
 ]
 
 
 # + comment_create, comment_delete
 
-    path('<int:pk>/comments/', views.comment_create, name='comment_create'),
+    path('<int:article_pk>/comments/', views.comment_create, name='comment_create'),
     path('<int:article_pk>/comments/<int:comment_pk>/delete/', views.comment_delete, name='comment_delete'),
 ```
 
@@ -475,8 +475,8 @@ def delete(request, article_pk):
 
 # delete + user
 @require_POST
-def delete(request, pk):
-    article = get_object_or_404(Article, pk=pk)
+def delete(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
     if request.user.is_authenticated:
         if request.user == article.user:
             article.delete()
@@ -496,9 +496,9 @@ from .forms import CommentForm
 from django.views.decorators.http import require_POST
 
 @require_POST
-def comment_create(request, pk):
+def comment_create(request, article_pk):
     if request.user.is_authenticated:
-        article = get_object_or_404(Article, pk=pk)
+        article = get_object_or_404(Article, pk=article_pk)
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
@@ -510,7 +510,7 @@ def comment_create(request, pk):
 
 # comment_create + user
 @require_POST
-def comment_create(request, pk):
+def comment_create(request, article_pk):
     if request.user.is_authenticated:
         ...
         if comment_form.is_valid():
@@ -1458,71 +1458,6 @@ def profile(request, username):
 
 
 
-### accounts/templates/accounts/profile.html
-
-```html
-<!-- profile.html -->
-
-{% extends 'base.html' %}
-
-{% block content %}
-
-  <h1>Profile</h1>
-  <a href="{% url 'articles:index' %}">HOME</a>
-  <hr>
-  
-  <h3>{{ person.username }}님의 페이지 입니다.</h3>
-  <hr>
-
-  <p>팔로잉 : {{ person.following.count }}, 팔로워 : {{ person.follower.count }}</p>
-  {% if request.user != person %}
-    <form action="{% url 'accounts:follow' person.pk %}" method="POST">
-      {% csrf_token %}
-      {% if request.user in person.follower.all %}
-        <button>언팔로우</button>
-      {% else %}
-        <button>팔로우</button>
-      {% endif %}
-    </form>
-  {% endif %}
-  <hr>
-
-  <p>내가 팔로잉한 유저</p>
-  {% for following in person.following.all %}
-    <p>유저이름 : <a href="{% url 'accounts:profile' following.username %}">{{ following.username }}</a></p>
-  {% endfor %}
-  <hr>
-
-  <p>나를 팔로워한 유저</p>
-  {% for follower in person.follower.all %}
-    <p>유저이름 : <a href="{% url 'accounts:profile' follower.username %}">{{ follower.username }}</a></p>
-  {% endfor %}
-  <hr>
-
-  <p>작성한 게시물</p>
-  {% for article in person.article_set.all %}
-    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>, 
-        좋아요 갯수 : {{ article.like_user.count }}</p>
-  {% endfor %}
-  <hr>
-
-  <p>작성한 댓글</p>
-  {% for comment in person.comment_set.all %}
-    <p>내용 : <a href="{% url 'articles:detail' comment.article.pk %}">{{ comment.content }}</a></p>
-  {% endfor %}
-  <hr>
-
-  <p>내가 좋아요한 게시물</p>
-  {% for article in person.like_article.all %}
-    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></p>
-  {% endfor %}
-  <hr>
-  
-{% endblock content %}
-```
-
-
-
 ### templates/base.html
 
 ```html
@@ -1591,5 +1526,289 @@ def follow(request, user_pk):
                 person.follower.add(request.user)
         return redirect('accounts:profile', person.username )
     return redirect('accounts:login')
+```
+
+
+
+### accounts/templates/accounts/profile.html
+
+```html
+<!-- profile.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>Profile</h1>
+  <a href="{% url 'articles:index' %}">HOME</a>
+  <hr>
+  
+  <h3>{{ person.username }}님의 페이지 입니다.</h3>
+  <hr>
+
+  <p>팔로잉 : {{ person.following.count }}, 팔로워 : {{ person.follower.count }}</p>
+  {% if request.user != person %}
+    <form action="{% url 'accounts:follow' person.pk %}" method="POST">
+      {% csrf_token %}
+      {% if request.user in person.follower.all %}
+        <button>언팔로우</button>
+      {% else %}
+        <button>팔로우</button>
+      {% endif %}
+    </form>
+  {% endif %}
+  <hr>
+
+  <p>내가 팔로잉한 유저</p>
+  {% for following in person.following.all %}
+    <p>유저이름 : <a href="{% url 'accounts:profile' following.username %}">{{ following.username }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>나를 팔로워한 유저</p>
+  {% for follower in person.follower.all %}
+    <p>유저이름 : <a href="{% url 'accounts:profile' follower.username %}">{{ follower.username }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>작성한 게시물</p>
+  {% for article in person.article_set.all %}
+    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>, 
+        좋아요 갯수 : {{ article.like_user.count }}</p>
+  {% endfor %}
+  <hr>
+
+  <p>작성한 댓글</p>
+  {% for comment in person.comment_set.all %}
+    <p>내용 : <a href="{% url 'articles:detail' comment.article.pk %}">{{ comment.content }}</a></p>
+  {% endfor %}
+  <hr>
+
+  <p>내가 좋아요한 게시물</p>
+  {% for article in person.like_article.all %}
+    <p>제목 : <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></p>
+  {% endfor %}
+  <hr>
+  
+{% endblock content %}
+```
+
+
+
+---
+
+# DRF
+
+### 기본 설정
+
+```bash
+# 패키지 설치
+
+$ pip install django-seed
+$ pip install django-extensions
+$ pip install djangorestframework
+$ pip freeze > requirements.txt		# requirements.txt에 설치목록 저장
+$ pip install -r requirements.txt 	# requirements.txt에 저장된 라이브러리 설치
+
+# settings.py
+INSTALLED_APPS = [
+    ...
+    'django_seed',
+    'django_extensions',
+    'rest_framework',
+    ...
+]
+
+# config/urls.py
+
+urlpatterns = [
+    path('api/v1/', include('articles.urls')),
+]
+```
+
+
+
+### articles/models.py
+
+```python
+from django.db import models
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=10)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return self.title
+    
+
+# Comment
+class Comment(models.Model):
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+    content = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+```
+
+```bash
+$ python manage.py migrate
+$ python manange.py seed articles --number=20
+```
+
+
+
+### Fixtures
+
+```python
+# articles/fixtures/articles/articles.json
+
+# dumpdata
+$ python manage.py dumpdata --indent 4 articles.article > article.json
+
+# loaddata
+$ python manage.py loaddata articles/articles.json
+```
+
+
+
+### articles/serializers.py
+
+```python
+from rest_framework import serializers
+from .models import Article, Comment
+
+
+class ArticelListSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Article
+        fields = ('id', 'title',)
+
+class CommentSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Comment
+        fields = '__all__'
+        read_only_fields = ('article',)
+
+class ArticelSerializer(serializers.ModelSerializer):
+    # comment_set = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+    comment_set = CommentSerializer(many=True, read_only=True)
+    comment_count = serializers.IntegerField(source='comment_set.count', read_only=True)
+
+    class Meta:
+        model = Article
+        fields = '__all__'
+```
+
+
+
+### articles/urls.py
+
+```python
+# urls.py
+
+from django.urls import path
+from . import views
+
+
+urlpatterns = [
+    path('articles/', views.article_list),
+    path('articles/<int:article_pk>', views.article_detail),
+    path('articles/<int:article_pk>/comments/', views.comment_create),
+    path('comments/', views.comment_list),
+    path('comments/<int:comment_pk>/', views.comment_detail),
+]
+```
+
+
+
+### articles/views.py
+
+```python
+# views.py
+
+from django.shortcuts import render, get_list_or_404, get_object_or_404
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework import status
+
+from .models import Article, Comment
+from .serializers import ArticelListSerializer, ArticelSerializer, CommentSerializer
+
+
+@api_view(['GET', 'POST'])
+def article_list(request):
+    if request.method == "GET":
+        articles = Article.objects.all()
+        serializer = ArticelListSerializer(articles, many=True)
+        return Response(serializer.data)
+    
+    elif request.method == 'POST':
+        serializer = ArticelSerializer(data = request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+
+@api_view(['GET', 'DELETE', 'PUT'])
+def article_detail(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+    if request.method == 'GET':
+        serializer = ArticelSerializer(article)
+        return Response(serializer.data)
+    
+    elif request.method == 'DELETE':
+        article.delete()
+        data = {
+            'delete': f'데이터 {article_pk}번이 삭제되었습니다.'
+        }
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
+    
+    elif request.method == 'PUT':
+        serializer = ArticelSerializer(article, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
+
+
+@api_view(['GET'])
+def comment_list(request):
+    comments = Comment.objects.all()
+    serializer = CommentSerializer(comments, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET', 'DELETE', 'PUT'])
+def comment_detail(request, comment_pk):
+    comment = get_object_or_404(Comment, pk=comment_pk)
+
+    if request.method == "GET":
+        serializer = CommentSerializer(comment)
+        return Response(serializer.data)
+
+    elif request.method == "DELETE":
+        comment.delete()
+        data = {
+            'delete': f'댓글 { comment_pk}번이 삭제되었습니다.'
+        }
+        return Response(data, status=status.HTTP_204_NO_CONTENT)
+
+    elif request.method == "PUT":
+        serializer = CommentSerializer(comment, data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save()
+            return Response(serializer.data)
+
+
+@api_view(['POST'])
+def comment_create(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+    serializer = CommentSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save(article=article)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
 ```
 
