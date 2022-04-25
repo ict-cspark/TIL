@@ -1680,7 +1680,7 @@ from rest_framework import serializers
 from .models import Article, Comment
 
 
-class ArticelListSerializer(serializers.ModelSerializer):
+class ArticleListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Article
@@ -1693,7 +1693,7 @@ class CommentSerializer(serializers.ModelSerializer):
         fields = '__all__'
         read_only_fields = ('article',)
 
-class ArticelSerializer(serializers.ModelSerializer):
+class ArticleSerializer(serializers.ModelSerializer):
     # comment_set = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
     comment_set = CommentSerializer(many=True, read_only=True)
     comment_count = serializers.IntegerField(source='comment_set.count', read_only=True)
@@ -1716,7 +1716,7 @@ from . import views
 
 urlpatterns = [
     path('articles/', views.article_list),
-    path('articles/<int:article_pk>', views.article_detail),
+    path('articles/<int:article_pk>/', views.article_detail),
     path('articles/<int:article_pk>/comments/', views.comment_create),
     path('comments/', views.comment_list),
     path('comments/<int:comment_pk>/', views.comment_detail),
@@ -1736,18 +1736,18 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 
 from .models import Article, Comment
-from .serializers import ArticelListSerializer, ArticelSerializer, CommentSerializer
+from .serializers import ArticleListSerializer, ArticleSerializer, CommentSerializer
 
 
 @api_view(['GET', 'POST'])
 def article_list(request):
     if request.method == "GET":
         articles = Article.objects.all()
-        serializer = ArticelListSerializer(articles, many=True)
+        serializer = ArticleListSerializer(articles, many=True)
         return Response(serializer.data)
     
     elif request.method == 'POST':
-        serializer = ArticelSerializer(data = request.data)
+        serializer = ArticleSerializer(data = request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -1757,7 +1757,7 @@ def article_list(request):
 def article_detail(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
     if request.method == 'GET':
-        serializer = ArticelSerializer(article)
+        serializer = ArticleSerializer(article)
         return Response(serializer.data)
     
     elif request.method == 'DELETE':
@@ -1768,7 +1768,7 @@ def article_detail(request, article_pk):
         return Response(data, status=status.HTTP_204_NO_CONTENT)
     
     elif request.method == 'PUT':
-        serializer = ArticelSerializer(article, data=request.data)
+        serializer = ArticSerializer(article, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
