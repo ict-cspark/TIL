@@ -84,7 +84,7 @@
 
 ## 📝 JavaScript
 
-1. 
+1. [2022/04/25](Learn/JavaScript/live_220425.md)
 
 ---
 
@@ -305,6 +305,7 @@
 1. [BOJ_2920_음계](Algorithm/Baekjoon/BOJ/BOJ_2920_음계.py)
 1. [BOJ_2475_검증수](Algorithm/Baekjoon/BOJ/BOJ_2475_검증수.py)
 1. [BOJ_1197_최소_스패닝_트리](Algorithm/Baekjoon/BOJ/BOJ_1197_최소_스패닝_트리.py)
+1. [BOJ_1018_체스판_다시_칠하기](Algorithm/Baekjoon/BOJ/BOJ_1018_체스판_다시_칠하기.py)
 
 #### 1단계 - 입출력과 사칙연산
 
