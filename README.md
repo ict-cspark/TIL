@@ -85,6 +85,9 @@
 ## 📝 JavaScript
 
 1. [2022/04/25](Learn/JavaScript/live_220425.md)
+1. [2022/04/26](Learn/JavaScript/live_220426.md)
+1. [2022/04/27](Learn/JavaScript/live_220427.md)
+1. 
 
 ---
 
@@ -306,6 +309,8 @@
 1. [BOJ_2475_검증수](Algorithm/Baekjoon/BOJ/BOJ_2475_검증수.py)
 1. [BOJ_1197_최소_스패닝_트리](Algorithm/Baekjoon/BOJ/BOJ_1197_최소_스패닝_트리.py)
 1. [BOJ_1018_체스판_다시_칠하기](Algorithm/Baekjoon/BOJ/BOJ_1018_체스판_다시_칠하기.py)
+1. [BOJ_18870_좌표_압축](Algorithm/Baekjoon/BOJ/BOJ_18870_좌표_압축.py)
+1. [BOJ_3048_개미](Algorithm/Baekjoon/BOJ/BOJ_3048_개미.py)
 
 #### 1단계 - 입출력과 사칙연산
 
@@ -477,11 +482,11 @@
 10. [올바른_괄호](Algorithm/Programmers/Level2/level2_올바른_괄호.py)
 11. [가장_큰_정사각형_찾기](Algorithm/Programmers/Level2/level2_가장_큰_정사각형_찾기.py)
 12. [가장_큰_수](Algorithm/Programmers/Level2/level2_가장_큰_수.py)
-12. [캐시](Algorithm/Programmers/Level2/level2_캐시.py)
-12. [프렌즈4블록](Algorithm/Programmers/Level2/level2_프렌즈4블록.py)
-12. [n진수_게임](Algorithm/Programmers/Level2/level2_n진수_게임.py)
-12. [튜플](Algorithm/Programmers/Level2/level2_튜플.py)
-12. 
+12. [[Kakao]캐시](Algorithm/Programmers/Level2/level2_캐시.py)
+12. [[Kakao]프렌즈4블록](Algorithm/Programmers/Level2/level2_프렌즈4블록.py)
+12. [[Kakao]n진수_게임](Algorithm/Programmers/Level2/level2_n진수_게임.py)
+12. [[Kakao]튜플](Algorithm/Programmers/Level2/level2_튜플.py)
+12. [[Kakao]오픈채팅방](Algorithm/Programmers/Level2/level2_오픈채팅방.py)
 
 ---
 
