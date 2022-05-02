@@ -160,7 +160,7 @@
 1. [2806_NQueen](Algorithm/SWExpertAcademy/Problem_Solving/2806_NQueen.py)
 1. [4012_요리사](Algorithm/SWExpertAcademy/Problem_Solving/4012_요리사.py)
 1. [5648_원자소멸시뮬레이션](Algorithm/SWExpertAcademy/Problem_Solving/5648_원자소멸시뮬레이션.py)
-1. [5688_세제곱근을_찾아라](Algorithm/SWExpertAcademy/Problem_Solving/5688_세제곱근을 찾아라.py)
+1. [5688_세제곱근을_찾아라](Algorithm/SWExpertAcademy/Problem_Solving/5688_세제곱근을_찾아라.py)
 
 #### 파이썬 프로그래밍 기초(1)
 
