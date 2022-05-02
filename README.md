@@ -87,7 +87,7 @@
 1. [2022/04/25](Learn/JavaScript/live_220425.md)
 1. [2022/04/26](Learn/JavaScript/live_220426.md)
 1. [2022/04/27](Learn/JavaScript/live_220427.md)
-1. 
+1. [2022/05/02](Learn/JavaScript/live_220502.md)
 
 ---
 
@@ -311,6 +311,7 @@
 1. [BOJ_1018_체스판_다시_칠하기](Algorithm/Baekjoon/BOJ/BOJ_1018_체스판_다시_칠하기.py)
 1. [BOJ_18870_좌표_압축](Algorithm/Baekjoon/BOJ/BOJ_18870_좌표_압축.py)
 1. [BOJ_3048_개미](Algorithm/Baekjoon/BOJ/BOJ_3048_개미.py)
+1. [BOJ_1916_최소비용_구하기](Algorithm/Baekjoon/BOJ/BOJ_1916_최소비용_구하기.py)
 
 #### 1단계 - 입출력과 사칙연산
 
