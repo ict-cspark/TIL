@@ -606,7 +606,7 @@ def comment_delete(request, article_pk ,comment_pk):
     <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
       {% csrf_token %}
       {{ comment_form }}
-        <button>Submit</button>
+       <button>Submit</button>
     </form>
   {% else %}
     <a href="{% url 'accounts:login' %}">[댓글을 작성하려면 로그인하세요.]</a>
@@ -1463,7 +1463,7 @@ def profile(request, username):
 ```html
 <!-- base.html -->
 
-<nav class="container">
+  <nav class="container">
     {% if request.user.is_authenticated %}
       <h2>Hello, <a href="{% url 'accounts:profile' request.user %}">{{ request.user }}</a></h2>
       ...
