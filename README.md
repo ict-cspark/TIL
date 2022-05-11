@@ -88,6 +88,15 @@
 1. [2022/04/26](Learn/JavaScript/live_220426.md)
 1. [2022/04/27](Learn/JavaScript/live_220427.md)
 1. [2022/05/02](Learn/JavaScript/live_220502.md)
+1. [2022/05/06 (PJT)](Learn/JavaScript/live_220506.md)
+
+---
+
+## 📺 Vue
+
+1. [2022/05/04](Learn/Vue/live_220504.md)
+2. [2022/05/09](Learn/Vue/live_220509.md)
+3. [2022/05/11](Learn/Vue/live_220511.md)
 
 ---
 
@@ -312,6 +321,8 @@
 1. [BOJ_18870_좌표_압축](Algorithm/Baekjoon/BOJ/BOJ_18870_좌표_압축.py)
 1. [BOJ_3048_개미](Algorithm/Baekjoon/BOJ/BOJ_3048_개미.py)
 1. [BOJ_1916_최소비용_구하기](Algorithm/Baekjoon/BOJ/BOJ_1916_최소비용_구하기.py)
+1. [BOJ_11660_구간_합_구하기_5.py](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/BOJ/BOJ_11660_구간_합_구하기_5.py)
+1. [BOJ_2805_나무_자르기.py](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/BOJ/BOJ_2805_나무_자르기.py)
 
 #### 1단계 - 입출력과 사칙연산
 
@@ -488,6 +499,7 @@
 12. [[Kakao]n진수_게임](Algorithm/Programmers/Level2/level2_n진수_게임.py)
 12. [[Kakao]튜플](Algorithm/Programmers/Level2/level2_튜플.py)
 12. [[Kakao]오픈채팅방](Algorithm/Programmers/Level2/level2_오픈채팅방.py)
+12. [[Kakao]124_나라_숫자](Algorithm/Programmers/Level2/level2_124_나라_숫자.py)
 
 ---
 
