@@ -336,9 +336,12 @@
 1. [BOJ_18870_좌표_압축](Algorithm/Baekjoon/BOJ/BOJ_18870_좌표_압축.py)
 1. [BOJ_3048_개미](Algorithm/Baekjoon/BOJ/BOJ_3048_개미.py)
 1. [BOJ_1916_최소비용_구하기](Algorithm/Baekjoon/BOJ/BOJ_1916_최소비용_구하기.py)
-1. [BOJ_11660_구간_합_구하기_5.py](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/BOJ/BOJ_11660_구간_합_구하기_5.py)
-1. [BOJ_2805_나무_자르기.py](https://github.com/ict-cspark/TIL/blob/master/Algorithm/Baekjoon/BOJ/BOJ_2805_나무_자르기.py)
-1. 
+1. [BOJ_11660_구간_합_구하기_5](Algorithm/Baekjoon/BOJ/BOJ_11660_구간_합_구하기_5.py)
+1. [BOJ_2805_나무_자르기](Algorithm/Baekjoon/BOJ/BOJ_2805_나무_자르기.py)
+1. [BOJ_25191_치킨댄스를_추는_곰곰이를_본_임스](Algorithm/Baekjoon/BOJ/BOJ_25191_치킨댄스를_추는_곰곰이를_본_임스.py)
+1. [BOJ_14719_빗물](Algorithm/Baekjoon/BOJ/BOJ_14719_빗물.py)
+1. [BOJ_1475_방_번호](Algorithm/Baekjoon/BOJ/BOJ_1475_방_번호.py)
+1. [BOJ_1520_내리막_길](Algorithm/Baekjoon/BOJ/BOJ_1520_내리막_길.py)
 
 #### 1단계 - 입출력과 사칙연산
 
