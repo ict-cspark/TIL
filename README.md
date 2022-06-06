@@ -60,16 +60,26 @@
 ## 📡Django
 
 1. [2022/03/02](Learn/Django/live_220302.md)
+
 2. [2022/03/03](Learn/Django/live_220303.md)
+
 3. [2022/03/04 (PJT)](Learn/Django/live_220304.md)
-3. [2022/03/08](Learn/Django/live_220308.md)
-3. [2022/03/10](Learn/Django/live_220310.md)
-3. [2022/03/11 (PJT)](Learn/Django/live_220311.md)
-3. [2022/04/06](Learn/Django/live_220406.md)
-3. [2022/04/08 (PJT)](Learn/Django/live_220408.md)
-3. [2022/04/11](Learn/Django/live_220411.md)
-3. [2022/04/20](Learn/Django/live_220420.md)
-3. 
+
+4. [2022/03/08](Learn/Django/live_220308.md)
+
+5. [2022/03/10](Learn/Django/live_220310.md)
+
+6. [2022/03/11 (PJT)](Learn/Django/live_220311.md)
+
+7. [2022/04/06](Learn/Django/live_220406.md)
+
+8. [2022/04/08 (PJT)](Learn/Django/live_220408.md)
+
+9. [2022/04/11](Learn/Django/live_220411.md)
+
+10. [2022/04/20](Learn/Django/live_220420.md)
+
+    
 
 ---
 
