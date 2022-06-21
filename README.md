@@ -79,8 +79,6 @@
 
 10. [2022/04/20](Learn/Django/live_220420.md)
 
-    
-
 ---
 
 ## 📊 DB
@@ -519,6 +517,7 @@
 12. [[Kakao]튜플](Algorithm/Programmers/Level2/level2_튜플.py)
 12. [[Kakao]오픈채팅방](Algorithm/Programmers/Level2/level2_오픈채팅방.py)
 12. [[Kakao]124_나라_숫자](Algorithm/Programmers/Level2/level2_124_나라_숫자.py)
+12. [조이스틱](Algorithm/Programmers/Level2/level2_조이스틱.py)
 
 ---
 
