@@ -1,4 +1,4 @@
-# Programmers - Level1 - 완주하지 못한 선수
+# Programmers - Level1 - 폰켓몬
 
 '''
 N마리 폰켓몬의 종류 번호가 담긴 배열 nums가 매개변수로 주어질 때,

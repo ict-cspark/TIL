@@ -1,6 +1,9 @@
-def solution(s):
+# Programmers - Level2 - 튜플
 
-    s = s[2:-2].split('},{')                # s를 슬라이싱 하여 {{와 }}를 제거 후 },{를 기준으로 split하여 리스트에 저장
+
+def solution(s):
+                                            # s를 슬라이싱 하여 {{와 }}를 제거 후 }
+    s = s[2:-2].split('},{')                # },{를 기준으로 split하여 리스트에 저장
     number = []                             # 숫자만 저장하기 위해 nubmer리스트 생성
     for i in s:                             # s 길이만큼 반복문 실행
         number.append(i.split(','))         # i에서 ,를 기준으로 split하여 생긴 리스트를 number에 추가
