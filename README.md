@@ -539,6 +539,9 @@
 
 1. [디스크_컨트롤러](Algorithm/Programmers/Level3/level3_%EB%94%94%EC%8A%A4%ED%81%AC_%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.py "level3_디스크_컨트롤러.py")
 2. [네트워크](Algorithm/Programmers/Level3/level3_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC.py "level3_네트워크.py")
+3. [입국심사](Algorithm/Programmers/Level3/level3_입국심사.py)
+4. [N으로_표현](Algorithm/Programmers/Level3/level3_N으로_표현.py)
+5. [가장_먼_노드](Algorithm/Programmers/Level3/level3_가장_먼_노드.py)
 
 
 
