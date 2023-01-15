@@ -363,6 +363,14 @@
 57. [BOJ_7287_등록](Algorithm/Baekjoon/BOJ/BOJ_7287_등록.py)
 58. [BOJ_9086_문자열](Algorithm/Baekjoon/BOJ/BOJ_9086_문자열.py)
 59. [BOJ_2798_블랙잭](Algorithm/Baekjoon/BOJ/BOJ_2798_블랙잭.py)
+60. [BOJ_2609_최대공약수와_최소공배수](Algorithm/Baekjoon/BOJ/BOJ_2609_최대공약수와_최소공배수.py)
+61. [BOJ_2751_수_정렬하기2](Algorithm/Baekjoon/BOJ/BOJ_2751_수_정렬하기2.py)
+62. [BOJ_1978_소수_찾기](Algorithm/Baekjoon/BOJ/BOJ_1978_소수_찾기.py)
+63. [BOJ_15829_Hashing](Algorithm/Baekjoon/BOJ/BOJ_15829_Hashing.py)
+64. [BOJ_1181_단어_정렬](Algorithm/Baekjoon/BOJ/BOJ_1181_단어_정렬.py)
+65. [BOJ_11050_이항_계수1](Algorithm/Baekjoon/BOJ/BOJ_11050_이항_계수1.py)
+66. [BOJ_10989_수_정렬하기3](Algorithm/Baekjoon/BOJ/BOJ_10989_수_정렬하기3.py)
+67. [BOJ_10814_나이순_정렬](Algorithm/Baekjoon/BOJ/BOJ_10814_나이순_정렬.py)
 
 #### 1단계 - 입출력과 사칙연산
 
