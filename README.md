@@ -375,6 +375,21 @@
 69. [BOJ_21918_전구](Algorithm/Baekjoon/BOJ/BOJ_21918_전구.py)
 70. [BOJ_11866_요세푸스_문제0](Algorithm/Baekjoon/BOJ/BOJ_11866_요세푸스_문제0.py)
 71. [BOJ_1913_달팽이](Algorithm/Baekjoon/BOJ/BOJ_1913_달팽이.py)
+72. [BOJ_10798_세로읽기](Algorithm/Baekjoon/BOJ/BOJ_10798_세로읽기.py)
+73. [BOJ_10816_숫자_카드2](Algorithm/Baekjoon/BOJ/BOJ_10816_숫자_카드2.py)
+74. [BOJ_10828_스택](Algorithm/Baekjoon/BOJ/BOJ_10828_스택.py)
+75. [BOJ_10845_큐](Algorithm/Baekjoon/BOJ/BOJ_10845_큐.py)
+76. [BOJ_10866_덱](Algorithm/Baekjoon/BOJ/BOJ_10866_덱.py)
+77. [BOJ_16926_배열_돌리기1](Algorithm/Baekjoon/BOJ/BOJ_16926_배열_돌리기1.py)
+78. [BOJ_1920_수_찾기](Algorithm/Baekjoon/BOJ/BOJ_1920_수_찾기.py)
+79. [BOJ_19583_싸이버개강총회](Algorithm/Baekjoon/BOJ/BOJ_19583_싸이버개강총회.py)
+80. [BOJ_20164_홀수_홀릭_호석](Algorithm/Baekjoon/BOJ/BOJ_20164_홀수_홀릭_호석.py)
+81. [BOJ_20437_문자열_게임2](Algorithm/Baekjoon/BOJ/BOJ_20437_문자열_게임2.py)
+82. [BOJ_2164_카드2](Algorithm/Baekjoon/BOJ/BOJ_2164_카드2.py)
+83. [BOJ_22859_HTML_파싱](Algorithm/Baekjoon/BOJ/BOJ_22859_HTML_파싱.py)
+84. [BOJ_25175_두~~부_두부_두부](Algorithm/Baekjoon/BOJ/BOJ_25175_두~~부_두부_두부.py)
+85. [BOJ_6550_부분_문자열](Algorithm/Baekjoon/BOJ/BOJ_6550_부분_문자열.py)
+86. [BOJ_9012_괄호](Algorithm/Baekjoon/BOJ/BOJ_9012_괄호.py)
 
 #### 1단계 - 입출력과 사칙연산
 
