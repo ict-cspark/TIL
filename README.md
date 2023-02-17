@@ -390,6 +390,21 @@
 84. [BOJ_25175_두~~부_두부_두부](Algorithm/Baekjoon/BOJ/BOJ_25175_두~~부_두부_두부.py)
 85. [BOJ_6550_부분_문자열](Algorithm/Baekjoon/BOJ/BOJ_6550_부분_문자열.py)
 86. [BOJ_9012_괄호](Algorithm/Baekjoon/BOJ/BOJ_9012_괄호.py)
+87. [BOJ_1025_제곱수_찾기](Algorithm/Baekjoon/BOJ/BOJ_1025_제곱수_찾기.py)
+88. [BOJ_1435_영화감독_숌](Algorithm/Baekjoon/BOJ/BOJ_1435_영화감독_숌.py)
+89. [BOJ_14712_넴모넴모_Easy](Algorithm/Baekjoon/BOJ/BOJ_14712_넴모넴모_Easy.py)
+90. [BOJ_15658_연산자_끼워넣기2](Algorithm/Baekjoon/BOJ/BOJ_15658_연산자_끼워넣기2.py)
+91. [BOJ_17609_회문](Algorithm/Baekjoon/BOJ/BOJ_17609_회문.py)
+92. [BOJ_20115_에너지_드링크](Algorithm/Baekjoon/BOJ/BOJ_20115_에너지_드링크.py)
+93. [BOJ_21278_호석이_두마리_치킨](Algorithm/Baekjoon/BOJ/BOJ_21278_호석이_두마리_치킨.py)
+94. [BOJ_21313_문어](Algorithm/Baekjoon/BOJ/BOJ_21313_문어.py)
+95. [BOJ_2503_숫자_야구](Algorithm/Baekjoon/BOJ/BOJ_2503_숫자_야구.py)
+96. [BOJ_2661_좋은수열](Algorithm/Baekjoon/BOJ/BOJ_2661_좋은수열.py)
+97. [BOJ_3980_선발_명단](Algorithm/Baekjoon/BOJ/BOJ_3980_선발_명단.py)
+98. [BOJ_7568_덩치](Algorithm/Baekjoon/BOJ/BOJ_7568_덩치.py)
+99. [BOJ_18312_시각](/Algorithm/Baekjoon/BOJ/BOJ_18312_시각.py)
+100. [BOJ_18429_근손실](Algorithm/Baekjoon/BOJ/BOJ_18429_근손실.py)
+101. [BOJ_20300_서강근육맨](Algorithm/Baekjoon/BOJ/BOJ_20300_서강근육맨.py)
 
 #### 1단계 - 입출력과 사칙연산
 
