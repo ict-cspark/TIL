@@ -405,6 +405,7 @@
 99. [BOJ_18312_시각](/Algorithm/Baekjoon/BOJ/BOJ_18312_시각.py)
 100. [BOJ_18429_근손실](Algorithm/Baekjoon/BOJ/BOJ_18429_근손실.py)
 101. [BOJ_20300_서강근육맨](Algorithm/Baekjoon/BOJ/BOJ_20300_서강근육맨.py)
+102. [BOJ_17626_Four_Squares](Algorithm/Baekjoon/BOJ/BOJ_17626_Four_Squares.py)
 
 #### 1단계 - 입출력과 사칙연산
 
